@@ -1,6 +1,5 @@
 # pmatarodrigues.github.io
 -----------------------------
-        ------------
 -----------------------------
 
 This is my first Github experience!
