@@ -12,7 +12,6 @@ class Header extends React.Component {
                 <span class="menu">
                     <span class="hamburger">
                     </span>
-                    <b>MENU</b>
                 </span>
                 <ul>
                 <li>
