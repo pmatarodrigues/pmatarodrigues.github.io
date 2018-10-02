@@ -6,7 +6,7 @@ import Paralax from '../components/parallax'
 
 export default () => (
     <div>
-        <Header/>
         <Paralax />
+        <Header />
     </div>
 )
