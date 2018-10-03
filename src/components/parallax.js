@@ -1,7 +1,7 @@
 import React from "react"
 import '../styles/styles.css'
 import Header from "../components/header"
-import { Parallax } from 'react-spring'
+import { Parallax } from "react-spring"
 
 
 class Paralax extends React.Component {
