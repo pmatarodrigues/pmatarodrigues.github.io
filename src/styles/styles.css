@@ -223,20 +223,6 @@ section{
   
 
 
-#profile-page #profile-pic img{
-  width: 30vw;
-  height: auto;
-  border-radius: 50%;
-  left: 20%;
-}
-
-.paragraph{
-  font-size: 30px;
-  max-width: 70%;
-  text-align: left;
-  color: #000;
-}
-
 /*<ANIMATIONS>*/
 
 @keyframes menu-box{
