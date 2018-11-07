@@ -2,8 +2,8 @@
 
 .skill-box{
     width: 60%;
-    height: 50%;
-    border-radius: 30px;
+    height: 80%;
+    border-radius: 5px;
     background-color: #FFF;
     margin-left: 20%;
     box-shadow: 0px 10px 70px -20px #757575;
@@ -11,8 +11,8 @@
 }
 
 .skill-text{
-    font-size: 30px;
-    color: #FFF;
+    font-size: 15px;
+    color: #000;
 }
 
 
@@ -21,7 +21,7 @@
     margin-top: 2%;
     position: relative;
     height: 1%;
-    width: 50%;
+    width: 20%;
     border-radius: 50px;
     background-color: #EEEEEE;
 }
@@ -31,4 +31,10 @@
     height: 100%;
     border-radius: inherit;
     transition: width .5s ease-in;
+}
+
+.flag-lang{
+    height: 20%;
+    width: auto;
+    margin: 0 auto;
 }

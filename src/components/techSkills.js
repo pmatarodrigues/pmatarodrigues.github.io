@@ -9,9 +9,16 @@ export default class TechnicalSkills extends React.Component {
         super(props);
 
         this.state = {
-            java: 50,
-            javascript: 60,
-            photoshop: 80
+            java: 55,
+            javascript: 65,            
+            sql: 60,
+            nodejs: 40,
+            c: 70,
+            git: 50,
+            reactNative: 40,
+            react: 30,
+            photoshop: 80,
+            illustrator: 70
         }
     }
 
@@ -23,18 +30,51 @@ export default class TechnicalSkills extends React.Component {
                 <Parallax.Layer offset={2} speed={0.5} style={{fontSize: '80px'}}>
                     <div class="skill-box">
                     </div>
-                    <h4 class="skill-text" style={{marginRight:'55%'}} >Java</h4>
                 </Parallax.Layer>
                 <Parallax.Layer offset={2.0} speed={0.8} style={{fontSize: '30px', marginRight:'90%'}}>
                     <strong>
                         Technical Skills
                     </strong>
-                    <div class="skill-level">
+                    <SkillBar percentage={this.state.java}/>
+                    <div class="skill-text">
                         Java
                     </div>
-                    <SkillBar percentage={this.state.java}/>
                     <SkillBar percentage={this.state.javascript}/>
+                    <div class="skill-text">
+                        JavaScript
+                    </div>
+                    <SkillBar percentage={this.state.c}/>
+                    <div class="skill-text">
+                        C
+                    </div>
+                    <SkillBar percentage={this.state.reactNative}/>
+                    <div class="skill-text">
+                        React Native
+                    </div>
+                    <SkillBar percentage={this.state.react}/>
+                    <div class="skill-text">
+                        ReactJS
+                    </div>
+                    <SkillBar percentage={this.state.sql}/>
+                    <div class="skill-text">
+                        SQL
+                    </div>
+                    <SkillBar percentage={this.state.nodejs}/>
+                    <div class="skill-text">
+                        NodeJS
+                    </div>
+                    <SkillBar percentage={this.state.git}/>
+                    <div class="skill-text">
+                        Git
+                    </div>
                     <SkillBar percentage={this.state.photoshop}/>
+                    <div class="skill-text">
+                        Photoshop
+                    </div>
+                    <SkillBar percentage={this.state.illustrator}/>
+                    <div class="skill-text">
+                        Illustrator
+                    </div>
 
                 </Parallax.Layer>
             </div>
@@ -50,5 +90,20 @@ const SkillBar = (props) => {
     )
 }
 const Filler = (props) => {
-    return <div className="skill-fill" style={{width: `${props.percentage}%` }} />
+
+    let background;
+
+    if(props.percentage >= 75){
+        background = "#004D40";
+    } else if(props.percentage >= 60){
+        background = "#00796B";
+    } else if(props.percentage >= 50){
+        background = "#00897B"
+    } else if(props.percentage >= 40){
+        background = "#009688"
+    } else{
+        background = "#4DB6AC"
+    }
+
+    return <div className="skill-fill" style={{width: `${props.percentage}%`, background: `${background}` }} />
 }

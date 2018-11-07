@@ -4,6 +4,7 @@ import Header from "../components/header"
 import { Parallax } from "react-spring"
 import Card from "./card";
 import TechnicalSkills from "./techSkills";
+import LanguageSkills from "./langSkills";
 
 
 class Paralax extends React.Component {
@@ -14,6 +15,7 @@ class Paralax extends React.Component {
             <Parallax ref={ref => (this.parallax = ref)} pages={5}>
                 <Parallax.Layer offset={0.9} speed={0.3} style={{ backgroundColor: '#FFF' }} />
                 <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#2EDBC1'}} />
+                <Parallax.Layer offset={2.7} speed={1} style={{ backgroundColor: '#2EDBC1'}} />
                 
                 <Parallax.Layer offset={0} speed={0}>
                     <img height="800" src="https://i.imgur.com/bl6uCTc.png" alt="DeMata"/>
@@ -28,7 +30,10 @@ class Paralax extends React.Component {
 
         {/* Technical Skills */}
             <TechnicalSkills/>
-            
+
+        {/* Language Skills */}
+            <LanguageSkills />
+
             </Parallax>
         </div>
         );
