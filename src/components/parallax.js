@@ -16,6 +16,7 @@ class Paralax extends React.Component {
                 <Parallax.Layer offset={0.9} speed={0.3} style={{ backgroundColor: '#FFF' }} />
                 <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#2EDBC1'}} />
                 <Parallax.Layer offset={2.7} speed={1} style={{ backgroundColor: '#2EDBC1'}} />
+                <Parallax.Layer offset={2.4} speed={0.3} style={{ backgroundColor: '#2EDBC1'}} />
                 
                 <Parallax.Layer offset={0} speed={0}>
                     <img height="800" src="https://i.imgur.com/bl6uCTc.png" alt="DeMata"/>

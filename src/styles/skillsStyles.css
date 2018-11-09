@@ -10,6 +10,36 @@
 
 }
 
+.skill-box.lang{
+    width: 20%;
+    height: 40%;
+    margin: 0 auto;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.lang-skill-title{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.lang-skill-subtitle{
+    font-size: 20px;
+    color: #BDBDBD;
+    font-weight: bold;
+}
+
+.flag-lang{
+    height: 40%;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.flag-lang:hover{
+    box-shadow: 0px 0px 70px -20px #757575;
+}
+
 .skill-text{
     font-size: 15px;
     color: #000;
@@ -33,8 +63,3 @@
     transition: width .5s ease-in;
 }
 
-.flag-lang{
-    height: 20%;
-    width: auto;
-    margin: 0 auto;
-}

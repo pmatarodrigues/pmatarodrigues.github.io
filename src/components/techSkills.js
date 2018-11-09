@@ -31,7 +31,7 @@ export default class TechnicalSkills extends React.Component {
                     <div class="skill-box">
                     </div>
                 </Parallax.Layer>
-                <Parallax.Layer offset={2.0} speed={0.8} style={{fontSize: '30px', marginRight:'90%'}}>
+                <Parallax.Layer offset={2} speed={0.8} style={{fontSize: '30px', marginRight:'90%'}}>
                     <strong>
                         Technical Skills
                     </strong>

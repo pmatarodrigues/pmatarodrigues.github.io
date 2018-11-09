@@ -14,22 +14,37 @@ export default class LanguageSkills extends React.Component {
                     <strong style={{ fontSize:"50px", color:"#FFF", marginTop: '20%' }}>
                         Language Skills
                     </strong>
-                </Parallax.Layer>
-                {/* ABOUT ME CARD BOX */}
-                <Parallax.Layer offset={2.95} speed={0.2}>
-                    <div class="skill-box" style={{width: '20%', height: '40%', marginTop:'10%', margin: '0 auto', display:'inline-block'}}>
-                    </div>{/**
-                     */}<div class="skill-box" style={{width: '20%', height: '40%', margin: '0 auto', marginLeft:'20px', display:'inline-block'}}>
-                    </div>{/**
-                     */}<div class="skill-box" style={{width: '20%', height: '40%', margin: '0 auto', marginLeft:'20px', display:'inline-block'}}>
-                    </div>
-                </Parallax.Layer>
-                <Parallax.Layer offset={2.98} speed={0.3}>
-                     <img class="flag-lang" src="https://image.flaticon.com/icons/svg/206/206628.svg" style={{ marginRight:'11%' }}/>
-                     <img class="flag-lang" src="https://image.flaticon.com/icons/svg/206/206592.svg" style={{ marginRight:'11%' }}/>
-                     <img class="flag-lang" src="https://image.flaticon.com/icons/svg/206/206724.svg" />
+                </Parallax.Layer>                
+
+                <Parallax.Layer offset={2.99} speed={0.2}>
+                
+                    <LangBox language="Portuguese" level="Native" flag="https://image.flaticon.com/icons/svg/206/206628.svg" />
+                    <LangBox language="English" level="Full Professional / Advanced" flag="https://image.flaticon.com/icons/svg/206/206592.svg" />
+                    <LangBox language="Spanish" level="Professional" flag="https://image.flaticon.com/icons/svg/206/206724.svg"/>
+
+
                 </Parallax.Layer>
             </div>
         );
     }
+}
+
+
+
+
+
+const LangBox = (props) => {
+    return (
+    <div class="skill-box lang">
+
+        <strong class="lang-skill-title">
+        <br></br><br></br>{props.language} <br></br>
+        </strong>
+        <p class="lang-skill-subtitle">
+            {props.level}
+        </p>
+
+        <img class="flag-lang" src={props.flag}/>
+
+    </div>);
 }
