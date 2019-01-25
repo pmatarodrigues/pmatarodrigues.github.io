@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* COLORS */
+:root{
+  --main-color-green: #2EDBC1;  
+  --border-radius-main: 20px;
+  --border-radius-small: 10px;
+  --border-radius-big: 50px;
+}
+
+
 * {
   font-family: 'Roboto', sans-serif;
 }

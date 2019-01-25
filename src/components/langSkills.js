@@ -27,21 +27,18 @@ export default class LanguageSkills extends React.Component {
 }
 
 
-
-
-
 const LangBox = (props) => {
     return (
     <div class="lang-box">
 
+        <img class="flag-lang" src={props.flag}/>
+
         <strong class="lang-skill-title">
-        <br></br><br></br>{props.language} <br></br>
+            {props.language}
         </strong>
         <p class="lang-skill-subtitle">
             {props.level}
         </p>
-
-        <img class="flag-lang" src={props.flag}/>
 
     </div>);
 }

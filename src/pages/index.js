@@ -5,6 +5,8 @@ import Paralax from '../components/parallax';
 import Card from "../components/card";
 import TechnicalSkills from "../components/techSkills";
 import LanguageSkills from "../components/langSkills";
+import Timeline from "../components/timeline";
+
 
 
 export default () => (
@@ -20,6 +22,7 @@ export default () => (
         {/* Language Skills */}
         <LanguageSkills />
 
+        <Timeline/>
     
     </div>
 )
