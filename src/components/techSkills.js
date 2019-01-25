@@ -1,6 +1,7 @@
 import React from "react"
 import '../styles/styles.css'
 import '../styles/skillsStyles.css'
+import '../styles/cardStyles.css'
 import { Parallax } from "react-spring"
 
 
@@ -25,58 +26,52 @@ export default class TechnicalSkills extends React.Component {
 
     render(){
         return(
-            <div>
-                {/* ABOUT ME CARD BOX */}
-                <Parallax.Layer offset={2} speed={0.5} style={{fontSize: '80px'}}>
-                    <div class="skill-box">
-                    </div>
-                </Parallax.Layer>
-                <Parallax.Layer offset={2} speed={0.8} style={{fontSize: '30px', marginRight:'90%'}}>
-                    <strong>
-                        Technical Skills
-                    </strong>
-                    <SkillBar percentage={this.state.java}/>
-                    <div class="skill-text">
-                        Java
-                    </div>
-                    <SkillBar percentage={this.state.javascript}/>
-                    <div class="skill-text">
-                        JavaScript
-                    </div>
-                    <SkillBar percentage={this.state.c}/>
-                    <div class="skill-text">
-                        C
-                    </div>
-                    <SkillBar percentage={this.state.reactNative}/>
-                    <div class="skill-text">
-                        React Native
-                    </div>
-                    <SkillBar percentage={this.state.react}/>
-                    <div class="skill-text">
-                        ReactJS
-                    </div>
-                    <SkillBar percentage={this.state.sql}/>
-                    <div class="skill-text">
-                        SQL
-                    </div>
-                    <SkillBar percentage={this.state.nodejs}/>
-                    <div class="skill-text">
-                        NodeJS
-                    </div>
-                    <SkillBar percentage={this.state.git}/>
-                    <div class="skill-text">
-                        Git
-                    </div>
-                    <SkillBar percentage={this.state.photoshop}/>
-                    <div class="skill-text">
-                        Photoshop
-                    </div>
-                    <SkillBar percentage={this.state.illustrator}/>
-                    <div class="skill-text">
-                        Illustrator
-                    </div>
-
-                </Parallax.Layer>
+            <div className="skill-box">
+                {/* TECHNICAL SKILLS */}
+                <strong class="card-title" style={{color: 'black'}}>
+                    Technical Skills
+                </strong>
+                
+                <SkillBar percentage={this.state.java}/>
+                <div class="skill-text">
+                    Java
+                </div>
+                <SkillBar percentage={this.state.javascript}/>
+                <div class="skill-text">
+                    JavaScript
+                </div>
+                <SkillBar percentage={this.state.c}/>
+                <div class="skill-text">
+                    C
+                </div>
+                <SkillBar percentage={this.state.reactNative}/>
+                <div class="skill-text">
+                    React Native
+                </div>
+                <SkillBar percentage={this.state.react}/>
+                <div class="skill-text">
+                    ReactJS
+                </div>
+                <SkillBar percentage={this.state.sql}/>
+                <div class="skill-text">
+                    SQL
+                </div>
+                <SkillBar percentage={this.state.nodejs}/>
+                <div class="skill-text">
+                    NodeJS
+                </div>
+                <SkillBar percentage={this.state.git}/>
+                <div class="skill-text">
+                    Git
+                </div>
+                <SkillBar percentage={this.state.photoshop}/>
+                <div class="skill-text">
+                    Photoshop
+                </div>
+                <SkillBar percentage={this.state.illustrator}/>
+                <div class="skill-text">
+                    Illustrator
+                </div>
             </div>
         );
     }

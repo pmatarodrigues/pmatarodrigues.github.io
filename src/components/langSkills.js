@@ -9,21 +9,18 @@ export default class LanguageSkills extends React.Component {
 
     render(){
         return(
-            <div>
-                <Parallax.Layer offset={2.88} speed={0.2}>
-                    <strong style={{ fontSize:"50px", color:"#FFF", marginTop: '20%' }}>
+            <div className="langskill-box">
+                <div>
+                    <strong className="card-title" style={{ fontSize:"50px", color:"white"}}>
                         Language Skills
                     </strong>
-                </Parallax.Layer>                
+                </div>
 
-                <Parallax.Layer offset={2.99} speed={0.2}>
-                
+                <div>                
                     <LangBox language="Portuguese" level="Native" flag="https://image.flaticon.com/icons/svg/206/206628.svg" />
                     <LangBox language="English" level="Full Professional / Advanced" flag="https://image.flaticon.com/icons/svg/206/206592.svg" />
                     <LangBox language="Spanish" level="Professional" flag="https://image.flaticon.com/icons/svg/206/206724.svg"/>
-
-
-                </Parallax.Layer>
+                </div>
             </div>
         );
     }
@@ -35,7 +32,7 @@ export default class LanguageSkills extends React.Component {
 
 const LangBox = (props) => {
     return (
-    <div class="skill-box lang">
+    <div class="lang-box">
 
         <strong class="lang-skill-title">
         <br></br><br></br>{props.language} <br></br>
