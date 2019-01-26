@@ -15,16 +15,14 @@ export default class Card extends React.Component {
                         <strong className="card-title">About Me</strong> <br></br><br></br>
                     </p>
                     <p className="paragraph" id="description">
-                        I'm a technology lover since I was a little kid and a <b> passionate learner </b>, 
-                        as I like to <b>read </b> and <b>discover </b> new things everyday.
+                        I've been a <b>technology lover</b> for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing.<br></br>
+                        <br></br>
+                        I like to keep <b>challenging</b> myself, to <b>try new things</b> everyday as that's how we can <b>improve</b> and get <b>better</b> in everything we do. <br></br>                         
+                        <br></br>
+                        If you have any question, recommendation or just wanna talk hit me up on any of the links below:
                     </p>
-                    <img src={'assets/personal_pic.png'} className="profile-pic" />
-                    {/* <p className="paragraph" style={{marginLeft: 'auto', marginRight: 'auto'}}>                    
-                        I always try to understand everything that's around me and I'm always looking for ways to <b>improve </b> 
-                        the quality and effectiveness of every small thing that surrounds me. <br/> <br/>
-                        Created some <b>innovative </b> projects on social media, and will keep trying to make something <b>different </b> 
-                        and <b>memorable </b> in every project. <br/> <br/>
-                    </p> */}
+                    <img />
+                    <img src={'assets/personal_pic.png'} className="profile-pic" />                    
                 </div>
                 <button className="bt-downloadCV">
                     Download CV
