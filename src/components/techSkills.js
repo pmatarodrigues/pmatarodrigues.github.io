@@ -26,52 +26,44 @@ export default class TechnicalSkills extends React.Component {
 
     render(){
         return(
-            <div className="skill-box">
+            <div id="tech-skills" className="skill-box">
                 {/* TECHNICAL SKILLS */}
                 <strong class="card-title" style={{color: 'black'}}>
                     Technical Skills
                 </strong>
-                
+                <br></br><br></br>
+                                                
+                <strong class="skill-text">Java</strong>                    
                 <SkillBar percentage={this.state.java}/>
-                <div class="skill-text">
-                    Java
-                </div>
+                
+                <strong class="skill-text">Javascript</strong>
                 <SkillBar percentage={this.state.javascript}/>
-                <div class="skill-text">
-                    JavaScript
-                </div>
+
+                <strong class="skill-text">C</strong>                    
                 <SkillBar percentage={this.state.c}/>
-                <div class="skill-text">
-                    C
-                </div>
+
+                <strong class="skill-text">React Native</strong>                    
                 <SkillBar percentage={this.state.reactNative}/>
-                <div class="skill-text">
-                    React Native
-                </div>
+                
+                <strong class="skill-text">ReactJS</strong>
                 <SkillBar percentage={this.state.react}/>
-                <div class="skill-text">
-                    ReactJS
-                </div>
+                
+                <strong class="skill-text">SQL</strong>
                 <SkillBar percentage={this.state.sql}/>
-                <div class="skill-text">
-                    SQL
-                </div>
+                
+                <strong class="skill-text">NodeJS</strong>
                 <SkillBar percentage={this.state.nodejs}/>
-                <div class="skill-text">
-                    NodeJS
-                </div>
+                
+                <strong class="skill-text">GIT</strong>
                 <SkillBar percentage={this.state.git}/>
-                <div class="skill-text">
-                    Git
-                </div>
+
+                <strong class="skill-text">Photoshop</strong>
                 <SkillBar percentage={this.state.photoshop}/>
-                <div class="skill-text">
-                    Photoshop
-                </div>
+                
+
+                <strong class="skill-text">Illustrator</strong>
                 <SkillBar percentage={this.state.illustrator}/>
-                <div class="skill-text">
-                    Illustrator
-                </div>
+
             </div>
         );
     }

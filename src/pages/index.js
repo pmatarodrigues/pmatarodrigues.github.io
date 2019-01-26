@@ -18,11 +18,13 @@ export default () => (
 
         <Timeline/>
 
-        {/* Technical Skills */}
-        <TechnicalSkills/>
+        <div className="skills-div">
+            {/* Technical Skills */}
+            <TechnicalSkills/>
 
-        {/* Language Skills */}
-        <LanguageSkills />
+            {/* Language Skills */}
+            <LanguageSkills />
+        </div>
     
     </div>
 )

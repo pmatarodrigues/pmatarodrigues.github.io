@@ -33,6 +33,7 @@ const LangBox = (props) => {
 
         <img class="flag-lang" src={props.flag}/>
 
+        <br></br>
         <strong class="lang-skill-title">
             {props.language}
         </strong>

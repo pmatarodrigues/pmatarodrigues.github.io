@@ -11,8 +11,10 @@ export default class Card extends React.Component {
                 <div className="card-background">
                     {/* ABOUT ME CARD BOX */}
                     <br></br>
-                    <p className="paragraph" style={{maxWidth: "30%"}}>
+                    <p className="paragraph" id="title" >
                         <strong className="card-title">About Me</strong> <br></br><br></br>
+                    </p>
+                    <p className="paragraph" id="description">
                         I'm a technology lover since I was a little kid and a <b> passionate learner </b>, 
                         as I like to <b>read </b> and <b>discover </b> new things everyday.
                     </p>

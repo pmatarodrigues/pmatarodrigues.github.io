@@ -12,11 +12,17 @@
     margin-bottom: 10vh;
 }
 
+
+.skill-text{
+    font-size: 15px;   
+    text-align: left; 
+}
+
 .skill-bar{
     margin: 0 auto;
-    margin-top: 15px;
     height: 10px;
     width: 60vw;
+    margin-bottom: 20px;
     border-radius: var(--border-radius-main);
     background-color: #EEEEEE;
 }
@@ -66,9 +72,32 @@
     margin: 0 auto;
 }
 
-.skill-text{
-    font-size: 15px;
-    color: #000;
+
+@media only screen and (min-width: 1300px){  
+
+    .skills-div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #tech-skills.skill-box{
+        width: 30vw;
+        margin-right: 3vw;     
+    }
+    .skill-bar{
+        width: 30vw;
+    }
+
+
+    .langskill-box{
+        width: 30%;
+        margin-left: 3vw;
+    }
+    .lang-box{
+        width: 30vw;
+    }
+    .flag-lang{
+        width: 20%;
+    }
+
 }
-
-

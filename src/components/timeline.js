@@ -8,7 +8,7 @@ export default class Timeline extends React.Component {
 
     render(){
         return(
-            <div className="skill-box">
+            <div id="timeline" className="skill-box">
                 <strong className="card-title" style={{color: "black"}}>
                     Timeline
                 </strong>    
@@ -31,14 +31,13 @@ const TimelineElement = (props) => {
             <div>            
                 <p className="element-description">
                     <strong className="element-title">
-                        {props.title}
+                        <strong style={{color: '#BDBDBD'}}>[{props.year}]</strong> {props.title}
                     </strong>
                     <br></br>
                     {props.description}
                 </p>
                 <img className="timeline-pic" src={props.img}/>
                 <br></br>
-                <strong className="timeline-element-year">{props.year}</strong>
             </div>
         </div>
     );
