@@ -20,8 +20,13 @@ export default class Card extends React.Component {
                         I like to keep <b>challenging</b> myself, to <b>try new things</b> everyday as that's how we can <b>improve</b> and get <b>better</b> in everything we do. <br></br>                         
                         <br></br>
                         If you have any question, recommendation or just wanna talk hit me up on any of the links below:
+                        <br></br>
+                        <img src={'assets/logos/linkedin.png'} style={{marginLeft: '30%'}} className="logos"/>
+                        <img src={'assets/logos/twitter.png'} className="logos"/>
+                        <img src={'assets/logos/github.png'} className="logos"/>
                     </p>
-                    <img />
+
+
                     <img src={'assets/personal_pic.png'} className="profile-pic" />                    
                 </div>
                 <button className="bt-downloadCV">
