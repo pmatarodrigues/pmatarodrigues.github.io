@@ -4,7 +4,7 @@ import '../styles/styles.css'
 class Header extends React.Component {
     render(){
         return(
-            <header class="header">
+            <div class="header">
                 <div class="logo">
                     <img src="https://i.imgur.com/u2RjHiT.png" alt="DeMata"/>
                 </div>
@@ -27,7 +27,7 @@ class Header extends React.Component {
                     <a href="">Goals</a>
                 </li>
                 </ul>    
-            </header>
+            </div>
         );
     }
 }

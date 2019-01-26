@@ -16,13 +16,13 @@ export default () => (
         {/* ABOUT ME CARD BOX */}
         <Card/>
 
+        <Timeline/>
+
         {/* Technical Skills */}
         <TechnicalSkills/>
 
         {/* Language Skills */}
         <LanguageSkills />
-
-        <Timeline/>
     
     </div>
 )

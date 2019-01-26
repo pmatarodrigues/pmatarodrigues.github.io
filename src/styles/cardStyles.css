@@ -10,30 +10,20 @@
 .profile-pic{
   border-radius: var(--border-radius-big);
   width: 50vw;
-  margin-top: 20px;
-  /* margin-bottom: 20px; */
+  margin-top: -260px;
+  margin-left: 110px;
+  margin-bottom: 30px;
   box-shadow: 0px 10px 30px -20px black;
 }
 
 .card-background{
-  width: 70vw;
-  padding: 30px;
+  width: 100vw;
+  padding: 20px;
   padding-bottom: 10px;
   margin: 0 auto;
-  margin-top: 2vh;
-  background-color: #2EDBC1;
-  border-radius: var(--border-radius-main);
-}
-
-.card-background .inside{
-  margin-top: -5vh;
-  padding: 10px;
-  padding-bottom: 0;
-  width: 60vw;
-  background-color: white;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  box-shadow: 0px 10px 30px -20px black;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  background-color: var(--main-color-green);
 }
 
 .bt-downloadCV{
@@ -51,12 +41,46 @@
 .paragraph{
   margin-top: 20px;
   font-size: 15px;
-  max-width: 95%;
-  text-align: left;
+  max-width: 70%;
+  text-align: justify;
   color: white;
 }
 /* --------------- */
 
+
+/* TIMELINE */
+.timeline-element{
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+}
+.timeline-element > div > p > .element-title{
+  font-size: 12px;
+  text-align: left;
+}
+.timeline-element > div{
+  margin-top: 10px;
+}
+.timeline-element > div > .element-description{
+  float: left;
+  width: 50%;
+  font-size: 15px;
+  text-align: left;
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.timeline-pic{
+  margin-left: 15%;
+  width: 70px;
+  height: 60px;
+  border-radius: 4px;
+}
+.timeline-element-year{
+  font-size: 10px;
+  opacity: 0.3;  
+}
 
 
 

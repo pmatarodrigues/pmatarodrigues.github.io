@@ -26,9 +26,10 @@ body {
   display: grid;
   grid-template-columns: 100px 100px;
   padding: 2em;
-  position: relative;
-  background-color: #FFF;
+  background-color: white;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .header img{
@@ -138,11 +139,6 @@ body {
   display: none;
   list-style: none;
 }
-@media (max-width: 660px){
-  .header ul{
-    left: 45%;
-  }
-}
 
 .header a{
   text-align: center;
@@ -184,16 +180,6 @@ section{
   bottom: null;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-}
-@media (max-width: 550px){
-  center-it{
-    transform: 0.5s ease-in-out;
-    position: absolute;
-    top: 80%;
-    right: null;
-    bottom: null;
-    left: 50%;
-  }
 }
 
   
