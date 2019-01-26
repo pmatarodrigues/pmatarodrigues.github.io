@@ -1,0 +1,1327 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "22c6b196c13d46aacbf26bb97c6939c0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin load-babel-config": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "id": "Plugin load-babel-config",
+      "name": "load-babel-config",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "packageJson": {
+        "name": "load-babel-config",
+        "description": "Internal plugin that handles loading Babel configs",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9c3ba11a08c19ad36e561c11549d5612",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3417e632258ea82012b76490184b7bbd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "04cb9201071694b250d93d059099b66a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e7aa2e39b523f19e69a8ef7fefeb0433",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "src",
+        "path": "/home/pedro/Projects/novoSite/pmatarodrigues/src/"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "xstate",
+            "version": "^3.1.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2443102f12be6fe474b65d7b19754460",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "2.1.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "2.1.5",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "hast-util-raw",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "remark",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.18.2"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-remove-position",
+            "version": "^1.1.2"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6f7c430d41527a03eee86f12e70f6cc7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "af31ca71362829e6d9ece5e45228a1ca",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues",
+      "packageJson": {
+        "name": "gatsby-starter-hello-world",
+        "description": "Gatsby hello world starter",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^2.1.5"
+          },
+          {
+            "name": "gh-pages",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "react",
+            "version": "^16.5.1"
+          },
+          {
+            "name": "react-animate-on-scroll",
+            "version": "^2.1.5"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.5.1"
+          },
+          {
+            "name": "react-scroll-parallax",
+            "version": "^1.3.5"
+          },
+          {
+            "name": "react-spring",
+            "version": "^5.9.0"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f2892b6dd31e3722136bf63a748b5de0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "2.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/pedro/Projects/novoSite/pmatarodrigues/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "2.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f29320e3d8f2d617d65d1b3b62059687",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {},
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-01-26T16:47:05.989Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "dce6d4c3b857fa617cf4a3cba2f64126",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "7da9f41a-2222-5ec7-a43d-995a2674c37f": {
+      "id": "7da9f41a-2222-5ec7-a43d-995a2674c37f",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1972b9d88609294292bb46c907a7b120",
+        "type": "Directory",
+        "description": "Directory \"src\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/",
+      "relativePath": "",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:29.062Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues",
+      "base": "src",
+      "ext": "",
+      "name": "src",
+      "relativeDirectory": "..",
+      "dev": 2055,
+      "mode": 16893,
+      "nlink": 5,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 811015,
+      "blocks": 8,
+      "atimeMs": 1548520409062.165,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:29.062Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "ccf1ec9d-165c-529c-a829-be89f393c76a": {
+      "id": "ccf1ec9d-165c-529c-a829-be89f393c76a",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e7399d805697b76b613fe08687444522",
+        "type": "Directory",
+        "description": "Directory \"src/components\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "relativePath": "components",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:29.062Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src",
+      "base": "components",
+      "ext": "",
+      "name": "components",
+      "relativeDirectory": "",
+      "dev": 2055,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 812032,
+      "blocks": 8,
+      "atimeMs": 1548520409062.165,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:29.062Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "dd73626e-0a7a-574c-b38c-4a2e6ea7a51c": {
+      "id": "dd73626e-0a7a-574c-b38c-4a2e6ea7a51c",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "30cc83f308e6e40021e4a9c5562c170f",
+        "type": "Directory",
+        "description": "Directory \"src/pages\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages",
+      "relativePath": "pages",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:29.062Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src",
+      "base": "pages",
+      "ext": "",
+      "name": "pages",
+      "relativeDirectory": "",
+      "dev": 2055,
+      "mode": 16893,
+      "nlink": 3,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 812030,
+      "blocks": 8,
+      "atimeMs": 1548520409062.165,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:29.062Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "6cf1121e-e9f4-59d2-bc54-9a82c9786cb7": {
+      "id": "6cf1121e-e9f4-59d2-bc54-9a82c9786cb7",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fe54c7628648dc98cec4492db96f35f5",
+        "type": "Directory",
+        "description": "Directory \"src/styles\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles",
+      "relativePath": "styles",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:29.062Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src",
+      "base": "styles",
+      "ext": "",
+      "name": "styles",
+      "relativeDirectory": "",
+      "dev": 2055,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 812031,
+      "blocks": 8,
+      "atimeMs": 1548520409062.165,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:29.062Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "e10ce1f1-1910-5094-b6d4-d1e5c4941d4b": {
+      "id": "e10ce1f1-1910-5094-b6d4-d1e5c4941d4b",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fabc4cf6f1cb1549f11d436080aaedd3",
+        "type": "Directory",
+        "description": "Directory \"src/pages/posts\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages/posts",
+      "relativePath": "pages/posts",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2018-10-02T11:08:41.000Z",
+      "accessTime": "2019-01-26T16:32:42.137Z",
+      "changeTime": "2019-01-26T16:32:37.333Z",
+      "birthTime": "2019-01-26T16:32:37.333Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages",
+      "base": "posts",
+      "ext": "",
+      "name": "posts",
+      "relativeDirectory": "pages",
+      "dev": 2055,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 827466,
+      "blocks": 8,
+      "atimeMs": 1548520362136.8489,
+      "mtimeMs": 1538478521000,
+      "ctimeMs": 1548520357332.7104,
+      "birthtimeMs": 1548520357332.7104,
+      "atime": "2019-01-26T16:32:42.137Z",
+      "mtime": "2018-10-02T11:08:41.000Z",
+      "ctime": "2019-01-26T16:32:37.333Z",
+      "birthtime": "2019-01-26T16:32:37.333Z"
+    },
+    "a5015330-d137-5772-97b6-5393999c000f": {
+      "id": "a5015330-d137-5772-97b6-5393999c000f",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "19a837bb6f578a3b897a7bc7e10564c4",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/components/card.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components/card.js",
+      "relativePath": "components/card.js",
+      "extension": "js",
+      "size": 2328,
+      "prettySize": "2.33 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "base": "card.js",
+      "ext": ".js",
+      "name": "card",
+      "relativeDirectory": "components",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815469,
+      "blocks": 8,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "05efc17a-f1c2-5c9e-b5d5-6773d05a9b05": {
+      "id": "05efc17a-f1c2-5c9e-b5d5-6773d05a9b05",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "541cf06007edba747cdff2250b393175",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/components/header.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components/header.js",
+      "relativePath": "components/header.js",
+      "extension": "js",
+      "size": 915,
+      "prettySize": "915 B",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "base": "header.js",
+      "ext": ".js",
+      "name": "header",
+      "relativeDirectory": "components",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815468,
+      "blocks": 8,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "454ab617-3b85-5945-ad90-1222f35ae04f": {
+      "id": "454ab617-3b85-5945-ad90-1222f35ae04f",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "eb4cc5bd6eea5edc1ade7c25adeb3693",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/components/langSkills.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components/langSkills.js",
+      "relativePath": "components/langSkills.js",
+      "extension": "js",
+      "size": 1250,
+      "prettySize": "1.25 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "base": "langSkills.js",
+      "ext": ".js",
+      "name": "langSkills",
+      "relativeDirectory": "components",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815473,
+      "blocks": 8,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "f6430b2d-6c27-5849-b33c-ce2f7e5e688c": {
+      "id": "f6430b2d-6c27-5849-b33c-ce2f7e5e688c",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "68e3d5091db6b7d38540f1aae4f923dc",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/components/parallax.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components/parallax.js",
+      "relativePath": "components/parallax.js",
+      "extension": "js",
+      "size": 1449,
+      "prettySize": "1.45 kB",
+      "modifiedTime": "2018-11-09T18:22:00.000Z",
+      "accessTime": "2019-01-26T16:32:42.129Z",
+      "changeTime": "2019-01-26T16:32:17.764Z",
+      "birthTime": "2019-01-26T16:32:17.764Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "base": "parallax.js",
+      "ext": ".js",
+      "name": "parallax",
+      "relativeDirectory": "components",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815470,
+      "blocks": 8,
+      "atimeMs": 1548520362128.8486,
+      "mtimeMs": 1541787720000,
+      "ctimeMs": 1548520337764.1406,
+      "birthtimeMs": 1548520337764.1406,
+      "atime": "2019-01-26T16:32:42.129Z",
+      "mtime": "2018-11-09T18:22:00.000Z",
+      "ctime": "2019-01-26T16:32:17.764Z",
+      "birthtime": "2019-01-26T16:32:17.764Z"
+    },
+    "336ac871-3ee9-58c6-9e7c-51bcfce14e94": {
+      "id": "336ac871-3ee9-58c6-9e7c-51bcfce14e94",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f83c6d1f8ea6ba78becff9ec6cc4c6fd",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/components/techSkills.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components/techSkills.js",
+      "relativePath": "components/techSkills.js",
+      "extension": "js",
+      "size": 2954,
+      "prettySize": "2.95 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "base": "techSkills.js",
+      "ext": ".js",
+      "name": "techSkills",
+      "relativeDirectory": "components",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815472,
+      "blocks": 8,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "1c55ff92-39b3-5116-a3e0-53e417344109": {
+      "id": "1c55ff92-39b3-5116-a3e0-53e417344109",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1280da515177653d60f138ece1264265",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/components/timeline.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components/timeline.js",
+      "relativePath": "components/timeline.js",
+      "extension": "js",
+      "size": 1967,
+      "prettySize": "1.97 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:29.438Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/components",
+      "base": "timeline.js",
+      "ext": ".js",
+      "name": "timeline",
+      "relativeDirectory": "components",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815471,
+      "blocks": 8,
+      "atimeMs": 1548520409438.1755,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:29.438Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "b752798a-a57b-50c1-9def-bee790366e65": {
+      "id": "b752798a-a57b-50c1-9def-bee790366e65",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a2e74bf64d62b4d82d5bfb0b21571b12",
+        "type": "File",
+        "mediaType": "application/javascript",
+        "description": "File \"src/pages/index.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages/index.js",
+      "relativePath": "pages/index.js",
+      "extension": "js",
+      "size": 679,
+      "prettySize": "679 B",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:29.114Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "pages",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815464,
+      "blocks": 8,
+      "atimeMs": 1548520409114.1665,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:29.114Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "e87e1f36-812b-5b10-b673-53ac030f0ce4": {
+      "id": "e87e1f36-812b-5b10-b673-53ac030f0ce4",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a2e2e78d95f73af92f308927f3cc49cf",
+        "type": "File",
+        "mediaType": "text/css",
+        "description": "File \"src/styles/cardStyles.css\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles/cardStyles.css",
+      "relativePath": "styles/cardStyles.css",
+      "extension": "css",
+      "size": 2670,
+      "prettySize": "2.67 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles",
+      "base": "cardStyles.css",
+      "ext": ".css",
+      "name": "cardStyles",
+      "relativeDirectory": "styles",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815466,
+      "blocks": 8,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "0ecb9535-23d3-5d9a-bd3c-a463e4bd8a70": {
+      "id": "0ecb9535-23d3-5d9a-bd3c-a463e4bd8a70",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3ff5665ad100538fad55b025781a313c",
+        "type": "File",
+        "mediaType": "text/css",
+        "description": "File \"src/styles/skillsStyles.css\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles/skillsStyles.css",
+      "relativePath": "styles/skillsStyles.css",
+      "extension": "css",
+      "size": 1794,
+      "prettySize": "1.79 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles",
+      "base": "skillsStyles.css",
+      "ext": ".css",
+      "name": "skillsStyles",
+      "relativeDirectory": "styles",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815465,
+      "blocks": 8,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "0427be7f-d5fc-5095-95a8-d6c6322a065c": {
+      "id": "0427be7f-d5fc-5095-95a8-d6c6322a065c",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b13b84c214f9dbe6a211597ffb686061",
+        "type": "File",
+        "mediaType": "text/css",
+        "description": "File \"src/styles/styles.css\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles/styles.css",
+      "relativePath": "styles/styles.css",
+      "extension": "css",
+      "size": 4735,
+      "prettySize": "4.74 kB",
+      "modifiedTime": "2019-01-26T16:33:29.058Z",
+      "accessTime": "2019-01-26T16:33:30.218Z",
+      "changeTime": "2019-01-26T16:33:29.058Z",
+      "birthTime": "2019-01-26T16:33:29.058Z",
+      "root": "/",
+      "dir": "/home/pedro/Projects/novoSite/pmatarodrigues/src/styles",
+      "base": "styles.css",
+      "ext": ".css",
+      "name": "styles",
+      "relativeDirectory": "styles",
+      "dev": 2055,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 815467,
+      "blocks": 16,
+      "atimeMs": 1548520410218.1968,
+      "mtimeMs": 1548520409058.165,
+      "ctimeMs": 1548520409058.165,
+      "birthtimeMs": 1548520409058.165,
+      "atime": "2019-01-26T16:33:30.218Z",
+      "mtime": "2019-01-26T16:33:29.058Z",
+      "ctime": "2019-01-26T16:33:29.058Z",
+      "birthtime": "2019-01-26T16:33:29.058Z"
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "82a762caa7637e084f8b45e1c7d8f598",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "9aff84edf4e690259124e0de1ed61d59"
+  },
+  "componentDataDependencies": {
+    "nodes": {},
+    "connections": {}
+  },
+  "jsonDataPaths": {
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "my-pages-319": "415/path---my-pages-319-e21-DySNbbadzW7EPleu8DU2BDuXCzU"
+  },
+  "components": {
+    "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages/index.js": {
+      "query": "",
+      "componentPath": "/home/pedro/Projects/novoSite/pmatarodrigues/src/pages/index.js"
+    }
+  },
+  "staticQueryComponents": {}
+}
