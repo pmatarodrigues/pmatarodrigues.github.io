@@ -21,9 +21,18 @@ export default class Card extends React.Component {
                         <br></br>
                         If you have any question, recommendation or just wanna talk hit me up on any of the links below:
                         <br></br>
-                        <img src={'assets/logos/linkedin.png'} style={{marginLeft: '30%'}} className="logos"/>
-                        <img src={'assets/logos/twitter.png'} className="logos"/>
-                        <img src={'assets/logos/github.png'} className="logos"/>
+                        <a href="https://www.linkedin.com/in/pmatarodrigues" target="_blank">
+                            <img src={'assets/logos/linkedin.png'} style={{marginLeft: '30%'}} className="logos"/>
+                        </a>
+                        <a href="https://www.twitter.com/astrolopitech" target="_blank">
+                            <img src={'assets/logos/twitter.png'} className="logos"/>
+                        </a>
+                        <a href="https://www.github.com/pmatarodrigues" target="_blank">
+                            <img src={'assets/logos/github.png'} className="logos"/>
+                        </a>
+                        <a href="mailto:pmatarodrigues@pm.me" target="_blank">
+                            <img src={'assets/logos/mail.png'} className="logos"/>
+                        </a>
                     </p>
 
 

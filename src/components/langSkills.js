@@ -17,9 +17,9 @@ export default class LanguageSkills extends React.Component {
                 </div>
 
                 <div>                
-                    <LangBox language="Portuguese" level="Native" flag="https://image.flaticon.com/icons/svg/206/206628.svg" />
-                    <LangBox language="English" level="Full Professional / Advanced" flag="https://image.flaticon.com/icons/svg/206/206592.svg" />
-                    <LangBox language="Spanish" level="Professional" flag="https://image.flaticon.com/icons/svg/206/206724.svg"/>
+                    <LangBox language="Portuguese" level="Native" flag="assets/flags/portugal.png" />
+                    <LangBox language="English" level="Full Professional / Advanced" flag="assets/flags/united-kingdom.png" />
+                    <LangBox language="Spanish" level="Professional" flag="assets/flags/spain.png"/>
                 </div>
             </div>
         );
