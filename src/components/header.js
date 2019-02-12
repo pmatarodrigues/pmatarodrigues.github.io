@@ -5,9 +5,6 @@ class Header extends React.Component {
     render(){
         return(
             <div class="header">
-                <div class="logo">
-                    <img src="https://i.imgur.com/u2RjHiT.png" alt="DeMata"/>
-                </div>
                 <input type="checkbox"/>
                 <span class="menu">
                     <span class="hamburger">
