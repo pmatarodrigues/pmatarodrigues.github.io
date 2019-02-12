@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /* COLORS */
 :root{
-  --main-color-green: #2EDBC1;  
+  --main-color: #FFF;
+  --secondary-color: #F6F7FB;
+  --main-color-green: #24CFAC;  
   --border-radius-main: 20px;
   --border-radius-small: 10px;
   --border-radius-big: 50px;
@@ -10,7 +12,7 @@
 
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {

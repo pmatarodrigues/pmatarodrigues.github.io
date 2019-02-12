@@ -3,14 +3,15 @@
 
 /* TOP PRESENTATION CARD (CARD.JS) */
 .card-title{
-  color: white;
+  color: black;
   font-size: 40px;
+  font-weight: bold;
 }
 
 .profile-pic{
-  border-radius: var(--border-radius-big);
-  border-top-right-radius: var(--border-radius-small);
-  width: 200px;
+  border-radius: 50%;
+  /* border-top-right-radius: var(--border-radius-small); */
+  width: 300px;
   margin-top: -80vh;
   margin-left: 110px;
   margin-bottom: 65vh;
@@ -24,8 +25,7 @@
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 10px;
-  background-color: var(--main-color-green);
-  box-shadow: 0px 0px 100px -20px black;
+  background-color: var(--main-color);
 }
 
 .bt-downloadCV{
@@ -45,7 +45,8 @@
   font-size: 15px;
   max-width: 70%;
   text-align: justify;
-  color: white;
+  color: black;
+  font-style: italic;
 }
 #title.paragraph{
   max-width: 30%;

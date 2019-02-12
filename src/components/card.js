@@ -12,7 +12,7 @@ export default class Card extends React.Component {
                     {/* ABOUT ME CARD BOX */}
                     <br></br>
                     <p className="paragraph" id="title" >
-                        <strong className="card-title">About Me</strong> <br></br><br></br>
+                        <strong className="card-title">Pedro Mata Rodrigues</strong> <br></br><br></br>
                     </p>
                     <p className="paragraph" id="description">
                         I've been a <b>technology lover</b> for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing.<br></br>
