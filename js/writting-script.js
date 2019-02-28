@@ -12,6 +12,7 @@ var topLogo = "<div style='font-size: 10px'>\
 # pmatarodrigues@pm.me \
 </div> ";
 
+var bashIdentifier = "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong>";
 var lastLine = "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> ";
 var helpLine = "<strong>Type 'help' to see the available commands </strong>";
 
@@ -19,14 +20,14 @@ var aText = new Array(
      topLogo,
 
 
-    "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> Hey! I'm Pedro Mata Rodrigues. Welcome to my personal website", 
-    "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> This will act as a CV and Portfolio<br>",
+    bashIdentifier + "Hey! I'm Pedro Mata Rodrigues. Welcome to my personal website", 
+    bashIdentifier + "This will act as a CV and Portfolio<br>",
 
-    "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> I've been a technology lover for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing",
-    "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> I like to keep challenging myself, to try new things everyday as that's how we can improve and get better in everything we do<br>",
+    bashIdentifier + "I've been a technology lover for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing",
+    bashIdentifier + "I like to keep challenging myself, to try new things everyday as that's how we can improve and get better in everything we do<br>",
 
-    "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong>" + helpLine,
-    "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong><strong>Hit tab to write and Enter to confirm </strong>",
+    bashIdentifier + helpLine,
+    bashIdentifier + "<strong>Hit tab to write and Enter to confirm </strong>",
     
     lastLine,
       
@@ -43,71 +44,9 @@ var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
 
-function typewriter(speedValue){
 
-     sContents =  ' ';
-     iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.getElementById("text-typing");
-
-     while ( iRow < iIndex ) {
-          sContents += aText[iRow++] + '<br/>';
-     }
-
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + prompt + '<span class="cursor"></span>';
-     
-
-     if ( iTextPos++ == iArrLength ) {
-          iTextPos = 0;
-          iIndex++;
-          if ( iIndex != aText.length ) {
-               iArrLength = aText[iIndex].length;
-               setTimeout("typewriter()", 50);          
-          }
-     } else {
-          setTimeout("typewriter()", speedValue);
-     }
-
-     // GET ELEMENT INPUT WHEN PRESS ENTER
-     var elem = document.getElementById("input-text");
-     elem.onkeyup = function(e){
-         if(e.keyCode == 13){
-             verifyUserInput(elem);
-         }
-     }
-}
 
 
 typewriter(iSpeed);
 
 
-
-function verifyUserInput(elem){
-     switch(elem.value){
-          case 'help':
-               aText.push(
-                    '<br><br><strong>help:</strong>',
-                    ' - about',
-                    ' - skills',                    
-                    ' - timeline <br><br>',
-                    lastLine
-               )
-               typewriter(iSpeed);
-               break;
-          case 'cls':               
-               var destination = document.getElementById("text-typing").innerHTML = "";
-               iIndex = 0;
-               aText.splice(1, aText.length);
-               aText.push(lastLine);
-               typewriter(0);
-               break;
-
-          default:
-               aText.push(
-                    '<br> command not found',
-                    helpLine + '<br>',
-                    lastLine
-               );
-               typewriter(iSpeed);
-               break;
-     }
-}
