@@ -6,8 +6,11 @@
     cursor: none;
     color: white;
 }
-body{
+body{    
     padding: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 50vh;
     color: white;
     display: flex;
     justify-content: left;
