@@ -3,6 +3,8 @@
 *{
     font-family: 'Roboto Mono', monospace;
     background-color: black;
+    cursor: none;
+    color: white;
 }
 body{
     padding: 10vw;
@@ -30,7 +32,6 @@ body{
         blinking 1s step-end infinite;
 }
 
-
 .css-typing p {
     color: white;
     font-size: 25px;
@@ -38,6 +39,19 @@ body{
     overflow: hidden;
     width: 70vw;
     word-wrap: break-word;
+}
+
+
+input{
+    border: 0;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    width: 4vw;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+*:focus{
+    outline: none;
 }
 
 
