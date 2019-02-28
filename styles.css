@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+}
+body{
+    padding: 10vw;
+    color: white;
+    display: flex;
+    justify-content: left;
+    text-align: left;    
+}
+
+.bash-identifier{
+    opacity: 1;
+    color: #4CAF50;
+}
+
+.cursor {
+    height: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 10px solid;
+
+    -webkit-animation: typing 3s steps(13, end) forwards,
+        blinking 1s step-end infinite;
+    animation: typing 3s steps(13, end) forwards,
+        blinking 1s step-end infinite;
+}
+
+
+.css-typing p {
+    color: white;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70vw;
+    word-wrap: break-word;
+}
+
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #4CAF50; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #4CAF50; }
+}
