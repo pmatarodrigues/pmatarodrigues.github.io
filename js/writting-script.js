@@ -19,18 +19,15 @@ var helpLine = "<strong>Type 'help' to see the available commands </strong>";
 var aText = new Array(
      topLogo,
 
+     bashIdentifier + "Hey! I'm Pedro Mata Rodrigues", 
+     bashIdentifier + "Welcome to my personal website", 
+     bashIdentifier + "I know. This looks... eh... different",
+     bashIdentifier + "But this is what my computer looks like everyday",
+     bashIdentifier + "So I thought I could share a little bit of my workspace with you <br>",    
 
-    bashIdentifier + "Hey! I'm Pedro Mata Rodrigues. Welcome to my personal website", 
-    bashIdentifier + "This will act as a CV and Portfolio<br>",
+     bashIdentifier + helpLine,
 
-    bashIdentifier + "I've been a technology lover for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing",
-    bashIdentifier + "I like to keep challenging myself, to try new things everyday as that's how we can improve and get better in everything we do<br>",
-
-    bashIdentifier + helpLine,
-    bashIdentifier + "<strong>Hit tab to write and Enter to confirm </strong>",
-    
-    lastLine,
-      
+     lastLine,      
 );
 
 var prompt = "<input id='input-text' type='text' />";
@@ -43,8 +40,6 @@ var iScrollAt = 20; // start scrolling up at this many lines
 var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
-
-
 
 
 typewriter(iSpeed);

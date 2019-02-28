@@ -24,6 +24,8 @@ function typewriter(speedValue){
 
     // GET ELEMENT INPUT WHEN PRESS ENTER
     var elem = document.getElementById("input-text");
+    elem.focus();
+    elem.select();
     elem.onkeyup = function(e){
         if(e.keyCode == 13){
             verifyUserInput(elem);
