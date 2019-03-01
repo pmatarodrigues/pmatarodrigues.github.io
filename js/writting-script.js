@@ -30,7 +30,11 @@ var aText = new Array(
      lastLine,      
 );
 
-var prompt = "<input id='input-text' type='text' />";
+//var prompt = "<input id='input-text' type='text' />";
+
+var prompt = ' \
+<textarea type="text" id="setter" onkeyup="writeit(this, event)"></textarea> \
+<span id="writer"></span><b class="cursor" id="cursor"></b>';
 
 var iSpeed = 10; // time delay of print out
 var iIndex = startPosition; // start printing array at this position

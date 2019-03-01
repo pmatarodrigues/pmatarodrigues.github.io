@@ -25,6 +25,7 @@ body{
 .cursor {
     height: 20px;
     width: 100%;
+    position: relative;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-left: 10px solid;
@@ -33,7 +34,7 @@ body{
         blinking 1s step-end infinite;
     animation: typing 3s steps(13, end) forwards,
         blinking 1s step-end infinite;
-}
+} 
 
 .css-typing p {
     color: white;
@@ -55,6 +56,16 @@ input{
 }
 *:focus{
     outline: none;
+}
+
+/* OUT OF THE SCREEN TO BE INVISIBLE */
+textarea#setter  {
+    left: -1000px;
+    position: absolute;
+}
+
+#getter {
+    margin: 5px;
 }
 
 

@@ -8,7 +8,7 @@ function typewriter(speedValue){
          sContents += aText[iRow++] + '<br/>';
     }
 
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + prompt + '<span class="cursor"></span>';
+    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + prompt;
     
 
     if ( iTextPos++ == iArrLength ) {
@@ -23,12 +23,7 @@ function typewriter(speedValue){
     }
 
     // GET ELEMENT INPUT WHEN PRESS ENTER
-    var elem = document.getElementById("input-text");
+    var elem = document.getElementById("setter");
     elem.focus();
     elem.select();
-    elem.onkeyup = function(e){
-        if(e.keyCode == 13){
-            verifyUserInput(elem);
-        }
-    }
 }

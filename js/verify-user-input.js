@@ -1,7 +1,7 @@
 
-function verifyUserInput(elem){
+function verifyUserInput(elem){          
      if(pageCommands(elem) == false && helpCommands(elem) == false){
-          switch(elem.value){
+          switch(elem.value.trim()){
                default:
                     aText.pop(aText.length - 1);               
                     aText.push(
@@ -17,7 +17,7 @@ function verifyUserInput(elem){
 }
 
 function pageCommands(elem){
-     switch(elem.value){
+     switch(elem.value.trim()){
           case 'about':
                pageAboutMe(elem);              
                break;
@@ -35,8 +35,8 @@ function pageCommands(elem){
      }
 }
 
-function helpCommands(elem){
-     switch(elem.value){          
+function helpCommands(elem){          
+     switch(elem.value.trim()){          
           case 'help':
                aText.pop(aText.length - 1);               
                aText.push(
@@ -49,7 +49,7 @@ function helpCommands(elem){
                    lastLine
                )
                typewriter(iSpeed);
-               break;
+               return true;
           case 'clear':
           case 'cls':               
                document.getElementById("text-typing").innerHTML = "";
@@ -57,7 +57,7 @@ function helpCommands(elem){
                aText.splice(1, aText.length);
                aText.push(lastLine);
                typewriter(0);
-               break;               
+               return true;
           default:
                return false;
           
