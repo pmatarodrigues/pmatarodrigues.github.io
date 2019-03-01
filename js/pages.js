@@ -18,14 +18,25 @@ function pageSkills(elem){
 
     if(elem == 'skills'){
         aText.pop(aText.length - 1);
-        aText.push(
-            bashIdentifier + elem,
-            '<br><br><strong> add flag to select skill: </strong>',
-            ' t - technical skills',
-            ' l - language skills',
-            "<br>example: <strong>'skills -l'</strong> to select language skills<br><br>",
-            lastLine
-        );
+        if(window.mobile){
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong> add flag to select skill: </strong>',
+                ' <button onclick=\"verifyUserInput(\'skills -t\');\">technical skills</button> ',
+                ' <button onclick=\"verifyUserInput(\'skills -l\');\">language skills</button>',
+                "<br>example: <strong>'skills -l'</strong> to select language skills<br><br>",
+                lastLine
+            );
+        } else{
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong> add flag to select skill: </strong>',
+                ' t - technical skills',
+                ' l - language skills',
+                "<br>example: <strong>'skills -l'</strong> to select language skills<br><br>",
+                lastLine
+            );
+        }
         typewriter(iSpeed);
     } else if(elem == 'skills -t'){
         aText.pop(aText.length - 1);
