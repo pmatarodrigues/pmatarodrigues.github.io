@@ -30,6 +30,21 @@ function pageCommands(elem){
           case 'skills -l':
                pageSkills(elem);
                break;
+          case 'timeline':
+               pageTimeline(elem);
+               break;
+          case 'contacts':
+               pageContacts(elem);
+               break;
+          case 'contacts -l':
+               pageContacts(elem);
+               break;
+          case 'contacts -g':
+               pageContacts(elem);
+               break;
+          case 'contacts -m':
+               pageContacts(elem);
+               break;
           default:
                return false;
      }
@@ -42,10 +57,10 @@ function helpCommands(elem){
                aText.push(
                     bashIdentifier + elem.value,
                    '<br><br><strong>help:</strong>',
-                   ' - about',
-                   ' - skills',                    
-                   ' - timeline',
-                   ' - contacts <br><br>',
+                   '<pre> <strong>> about </strong> &#9; # these are my motivations and what i like to do</pre>',
+                   '<pre> <strong>> skills </strong> &#9; # what i\'m better at and what languages i can speak</pre>',
+                   '<pre> <strong>> timeline </strong> &#9; # a list of things i\'ve done in the past that made me be better and learn more</pre>',
+                   '<pre> <strong>> contacts </strong> &#9; # if you want to get in touch with me </pre><br><br>',
                    lastLine
                )
                typewriter(iSpeed);

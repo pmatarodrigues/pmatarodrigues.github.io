@@ -52,6 +52,11 @@ input{
     outline: none;
 }
 
+pre{
+    margin: 0;
+    display: inline;
+}
+
 /* OUT OF THE SCREEN TO BE INVISIBLE */
 textarea#setter  {
     left: -1000px;

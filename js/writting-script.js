@@ -1,6 +1,6 @@
 // set up text to print, each item in array is new line
 
-var startPosition = 0;
+var startPosition = 5;
 
 if(startPosition == null){
      startPosition = 0;
