@@ -45,8 +45,18 @@ var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
 
-if(!(window.innerHeight > window.innerWidth)){
-     typewriter(iSpeed);
+
+// VERIFY DEVICE ORIENTATION
+function verifyOrientation(){
+     if(window.innerHeight < window.innerWidth){
+          typewriter(iSpeed);
+     }
 }
 
+window.onresize = function(){ 
+     verifyOrientation();
+}
+
+// INITIAL VERIFICATION
+verifyOrientation();
 
