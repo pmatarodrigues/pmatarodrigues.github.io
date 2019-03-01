@@ -26,4 +26,5 @@ function typewriter(speedValue){
     var elem = document.getElementById("setter");
     elem.focus();
     elem.select();
+    prompt();
 }
