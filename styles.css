@@ -89,6 +89,9 @@ textarea#setter  {
         margin-top: 20vh;
         font-size: 20px;
     }
+    *{
+        font-size: 10px;
+    }
 
     .rotate-image{
         -webkit-animation: spin1 2s infinite linear;
