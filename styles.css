@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    cursor: none;
+    color: white;
+}
+body{    
+    padding: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: left;
+    text-align: left;    
+}
+
+.portrait-mode{
+    display: none;
+}
+
+.bash-identifier{
+    opacity: 1;
+    color: #4CAF50;
+}
+
+.cursor {
+    height: 20px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 10px solid;
+
+    -webkit-animation: typing 3s steps(13, end) forwards,
+        blinking 1s step-end infinite;
+    animation: typing 3s steps(13, end) forwards,
+        blinking 1s step-end infinite;
+} 
+
+input{
+    border: 0;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    width: 5vw;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+*:focus{
+    outline: none;
+}
+
+/* OUT OF THE SCREEN TO BE INVISIBLE */
+textarea#setter  {
+    left: -1000px;
+    position: absolute;
+}
+
+#getter {
+    margin: 5px;
+}
+
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #4CAF50; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #4CAF50; }
+}
+
+
+@media only screen and (orientation: portrait){
+    .css-typing{
+        display: none;
+    }
+    .portrait-mode{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20vh;
+        font-size: 30px;
+    }
+
+    .rotate-image{
+        -webkit-animation: spin1 2s infinite linear;
+        -moz-animation: spin1 2s infinite linear;
+        -o-animation: spin1 2s infinite linear;
+        -ms-animation: spin1 2s infinite linear;
+        animation: spin1 2s infinite linear;
+        width: 20vw;
+        margin: 0 auto;
+        margin-bottom: 10vw;        
+        display: block;
+    }
+
+
+    @-webkit-keyframes spin1 {
+        0% { -webkit-transform: rotate(0deg);}
+        50% {-webkit-transform: rotate(45deg);}
+        100% { -webkit-transform: rotate(0deg);}
+    }
+    @-moz-keyframes spin1 {
+        0% { -moz-transform: rotate(0deg);}
+        50% {-moz-transform: rotate(45deg);}
+        100% { -moz-transform: rotate(0deg);}    
+    }
+    @-o-keyframes spin1 {
+        0% { -o-transform: rotate(0deg);}
+        50% {-o-transform: rotate(45deg);}
+        100% { -o-transform: rotate(0deg);}
+    }
+    @-ms-keyframes spin1 {
+        0% { -ms-transform: rotate(0deg);}
+        50% {-ms-transform: rotate(45deg);}
+        100% { -ms-transform: rotate(0deg);}
+    }
+    @-keyframes spin1 {
+        0% { transform: rotate(0deg);}
+        50% {transform: rotate(45deg);}
+        100% { transform: rotate(0deg);}
+    } 
+
+}
