@@ -4,7 +4,7 @@
 function pageAboutMe(elem){
     aText.pop(aText.length - 1);
     aText.push(
-         bashIdentifier + elem.value.trim(),
+         bashIdentifier + elem,
          '<br><br> <strong> about me: </strong>',
          "I've been a technology lover for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing",
          "I like to keep challenging myself, to try new things everyday as that's how we can improve and get better in everything we do<br><br>",
@@ -16,10 +16,10 @@ function pageAboutMe(elem){
 
 function pageSkills(elem){
 
-    if(elem.value.trim() == 'skills'){
+    if(elem == 'skills'){
         aText.pop(aText.length - 1);
         aText.push(
-            bashIdentifier + elem.value.trim(),
+            bashIdentifier + elem,
             '<br><br><strong> add flag to select skill: </strong>',
             ' t - technical skills',
             ' l - language skills',
@@ -27,10 +27,10 @@ function pageSkills(elem){
             lastLine
         );
         typewriter(iSpeed);
-    } else if(elem.value.trim() == 'skills -t'){
+    } else if(elem == 'skills -t'){
         aText.pop(aText.length - 1);
         aText.push(
-            bashIdentifier + elem.value.trim(),
+            bashIdentifier + elem,
             '<br><br><strong> technical skills: </strong>',
             skillBar('java &#09;', 60),
             skillBar('javascript &#09;', 70),
@@ -47,10 +47,10 @@ function pageSkills(elem){
         );
         typewriter(iSpeed);
 
-    } else if(elem.value.trim() == 'skills -l'){
+    } else if(elem == 'skills -l'){
         aText.pop(aText.length - 1);
         aText.push(
-            bashIdentifier + elem.value.trim(),
+            bashIdentifier + elem,
             '<br><br><strong> language skills: </strong>',
             '<pre> <strong>> portuguese </strong> &#09;&#09; [native] </pre>',
             '<pre> <strong>> english </strong> &#09;&#09; [full professional] </pre>',
@@ -77,7 +77,7 @@ function skillBar(skillName, skillPoints){
 function pageTimeline(elem){
     aText.pop(aText.length - 1);
     aText.push(
-         bashIdentifier + elem.value.trim(),
+         bashIdentifier + elem,
          '<br><br> <strong> timeline: </strong>',
          timelineElement('Inspire Portugal (WebSummit) &#09;', '2016', 'Participation in the WebSummit\' students reunion'),
          timelineElement('SPEC &#09;&#09;&#09;&#09;', '2016-2017', 'Website/blog with news about the advances in the technological world'),
@@ -100,11 +100,11 @@ function timelineElement(elementName, elementYear, elementDescription){
 
 function pageContacts(elem){
 
-    switch(elem.value.trim()){
+    switch(elem){
         case 'contacts':
             aText.pop(aText.length - 1);
             aText.push(
-                bashIdentifier + elem.value.trim(),
+                bashIdentifier + elem,
                 '<br><br><strong>add flag to select contact: </strong>',
                 ' l - linkedin',
                 ' g - github',
@@ -119,7 +119,7 @@ function pageContacts(elem){
         case 'contacts -l':
             aText.pop(aText.length - 1);
             aText.push(
-                bashIdentifier + elem.value.trim(),
+                bashIdentifier + elem,
                 '<br><br><strong>opening my linkedin page on a new tab...</strong>',                                
                 '<br>',
                 lastLine
@@ -131,7 +131,7 @@ function pageContacts(elem){
         case 'contacts -g':
             aText.pop(aText.length - 1);
             aText.push(
-                bashIdentifier + elem.value.trim(),
+                bashIdentifier + elem,
                 '<br><br><strong>opening my github page on a new tab...</strong>',                                
                 '<br>',
                 lastLine
@@ -143,7 +143,7 @@ function pageContacts(elem){
         case 'contacts -m':
             aText.pop(aText.length - 1);
             aText.push(
-                bashIdentifier + elem.value.trim(),
+                bashIdentifier + elem,
                 '<br><br><strong>opening your default email client...</strong>',
                 'don\'t forget to say who you are :)',
                 '<br>',

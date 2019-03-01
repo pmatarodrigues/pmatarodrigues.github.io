@@ -6,31 +6,28 @@ if(startPosition == null){
      startPosition = 0;
 }
 
-
 var topLogo = "<div style='font-size: 10px'>\
 # developed by Pedro Mata Rodrigues <br>\
 # pmatarodrigues@pm.me \
 </div> ";
 
 var bashIdentifier = "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong>";
-var lastLine = "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> ";
-var helpLine = "<strong>Type 'help' to see the available commands </strong>";
+var lastLineDesktop = "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> ";
+var lastLineMobile = "<strong class='bash-identifier'>pedro@matarodrigues: ~ $ </strong> <button onclick=\"verifyUserInput('help');\">help</button> ";
+var helpLineDesktop = "<strong class='show-desktop'>Type 'help' to see the available commands </strong>";
+var helpLineMobile = "<strong class='show-desktop'>Press 'help' to see the available commands </strong>";
+var helpLine;
 
 var aText = new Array(
      topLogo,
-
      bashIdentifier + "Hey! I'm Pedro Mata Rodrigues", 
      bashIdentifier + "Welcome to my personal website", 
      bashIdentifier + "I know. This looks... eh... different",
      bashIdentifier + "But this is what my computer looks like everyday",
-     bashIdentifier + "So I thought I could share a little bit of my workspace with you <br>",    
-
-     bashIdentifier + helpLine,
-
-     lastLine,      
+     bashIdentifier + "So I thought I could share a little bit of my workspace with you <br>"   
 );
 
-//var prompt = "<input id='input-text' type='text' />";
+verifyIfMobileDevice();
 
 var prompt = ' \
 <textarea type="text" id="setter" onkeyup="writeit(this, event)"></textarea> \
@@ -46,17 +43,14 @@ var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
 
 
-// VERIFY DEVICE ORIENTATION
-function verifyOrientation(){
-     if(window.innerHeight < window.innerWidth){
+window.onresize = function(){ 
+     if(verifyOrientation()){
           typewriter(iSpeed);
      }
 }
 
-window.onresize = function(){ 
-     verifyOrientation();
-}
-
 // INITIAL VERIFICATION
-verifyOrientation();
+if(verifyOrientation()){
+     typewriter(iSpeed);
+}
 

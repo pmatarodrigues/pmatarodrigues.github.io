@@ -16,7 +16,7 @@ function replaceText(txt){
 
 function writeit(from, e){
     if(e.keyCode == 13){        
-        verifyUserInput(from);
+        verifyUserInput(from.value.trim());
     }    
     
     e = e || window.event;
