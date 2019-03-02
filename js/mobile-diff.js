@@ -11,7 +11,7 @@ function verifyOrientation(){
 // VERIFY HEIGHT SIZE TO KNOW IF IT'S MOBILE
 function verifyIfMobileDevice(){
 
-    if(window.innerHeight > 500){
+    if('ontouchstart' in window){
          helpLine = helpLineDesktop;
          lastLine = lastLineDesktop;
          aText.push(
