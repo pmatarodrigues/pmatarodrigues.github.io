@@ -35,6 +35,9 @@ function pageCommands(elem){
           case 'contacts -l':
                pageContacts(elem);
                return true;
+          case 'contacts -t':
+               pageContacts(elem);
+               return true;
           case 'contacts -g':
                pageContacts(elem);
                return true;
@@ -50,11 +53,15 @@ function helpCommands(elem){
      switch(elem){          
           case 'help':
                aText.pop(aText.length - 1);  
+               if(window.mobile){
+                    aText.push(
+                         '# ~ i can see you\'re using a mobile device so you\'ll be prompted with some buttons',
+                         '# ~ all buttons (green border) are clickable<br>'
+                    );
+               }
                aText.push(
                     bashIdentifier + elem,
-                    '<br><br><strong>help:</strong>',
-                    '# ~ i can see you\'re using a mobile device so you\'ll be prompted with some buttons',
-                    '# ~ all buttons (green border) are clickable<br>',
+                    '<br><br><strong>help:</strong>',                    
                     helpPage('about', '# these are my motivations and what i like to do'),
                     helpPage('skills', '# what i\'m better at and what languages i can speak'),
                     helpPage('timeline', '# a list of things i\'ve done in the past that made me be better and learn more'),

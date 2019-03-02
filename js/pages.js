@@ -6,8 +6,13 @@ function pageAboutMe(elem){
     aText.push(
          bashIdentifier + elem,
          '<br><br> <strong> about me: </strong>',
-         "I've been a technology lover for a long time, since I was a little kid, when MySpace, mIRC and MSN were still a thing",
-         "I like to keep challenging myself, to try new things everyday as that's how we can improve and get better in everything we do<br><br>",
+         "# ~ i'm a technology lover since a long time ago, like when MySpace, mIRC and MSN were still a thing",
+         "# ~ i like to keep challenging myself, to try new things everyday",
+         " as that's how we can improve and get better in everything we do",
+         "# ~ people also call me a geek, i don\'t know why ¯\\_(ツ)_/¯ <br>",
+         "# ~ i hope you're enjoying my website",
+         "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links",
+         "<br>",
          lastLine
     );
     typewriter(iSpeed); 
@@ -118,6 +123,7 @@ function pageContacts(elem){
                     bashIdentifier + elem,
                     '<br><br><strong>add flag to select contact: </strong>',
                     ' l - linkedin',
+                    ' t - twitter',
                     ' g - github',
                     ' m - email',
                     "<br>example: <strong>'contacts -l'</strong> to open my linkedin",
@@ -129,6 +135,7 @@ function pageContacts(elem){
                     bashIdentifier + elem,
                     '<br><br><strong>add flag to select contact: </strong>',
                     '<button style="width: 150px" onclick="verifyUserInput(\'contacts -l\');">l - linkedin</button>',
+                    '<button style="width: 150px" onclick="verifyUserInput(\'contacts -t\');">t - twitter</button>',
                     '<button style="width: 150px" onclick="verifyUserInput(\'contacts -g\');">g - github</button>',
                     '<button style="width: 150px" onclick="verifyUserInput(\'contacts -m\');">m - email</button>',
                     "<br>example: <strong>'contacts -l'</strong> to open my linkedin",
@@ -139,12 +146,23 @@ function pageContacts(elem){
             
             typewriter(iSpeed); 
             break;
-        
+        case 'contacts -t':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong>opening my twitter page...</strong>',                                
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed); 
+            var win = window.open('https://twitter.com/astrolopitech', '_blank');
+            win.focus();
+            break;   
         case 'contacts -l':
             aText.pop(aText.length - 1);
             aText.push(
                 bashIdentifier + elem,
-                '<br><br><strong>opening my linkedin page on a new tab...</strong>',                                
+                '<br><br><strong>opening my linkedin page...</strong>',                                
                 '<br>',
                 lastLine
             );
@@ -156,7 +174,7 @@ function pageContacts(elem){
             aText.pop(aText.length - 1);
             aText.push(
                 bashIdentifier + elem,
-                '<br><br><strong>opening my github page on a new tab...</strong>',                                
+                '<br><br><strong>opening my github page...</strong>',                                
                 '<br>',
                 lastLine
             );
