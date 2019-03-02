@@ -12,7 +12,7 @@ function pageAboutMe(elem){
          "# ~ people also call me a geek, i don\'t know why ¯\\_(ツ)_/¯ <br>",
          "# ~ i hope you're enjoying my website",
          "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links<br>",
-         "# ~ oh this is me: ",
+         "# ~ oh and btw, this is me: ",
          '<img src="assets/personal-pic.png">',
          "<br>",
          lastLine
