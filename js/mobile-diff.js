@@ -11,21 +11,22 @@ function verifyOrientation(){
 // VERIFY HEIGHT SIZE TO KNOW IF IT'S MOBILE
 function verifyIfMobileDevice(){
 
-    if('ontouchstart' in window){
-         helpLine = helpLineDesktop;
-         lastLine = lastLineDesktop;
-         aText.push(
-              bashIdentifier + helpLine,
-              lastLineDesktop
-         );          
-         window.mobile = false;
-    } else{
-         helpLine = helpLineMobile;
-         lastLine = lastLineMobile;
-         aText.push(
-              bashIdentifier + helpLine,
-              lastLineMobile
-         );
-        window.mobile = true;
+     // IF DEVICE HAS TOUCH SCREEN
+    if('ontouchstart' in document.documentElement){
+          helpLine = helpLineMobile;         // CONFIG LINES TO DISPLAY MOBILE VERSION
+          lastLine = lastLineMobile;          
+          aText.push(
+               bashIdentifier + helpLine,
+               lastLineMobile
+          );
+          window.mobile = true;              // GLOBAL VARIABLE TO FACILIATE USE
+     } else{
+          helpLine = helpLineDesktop;        // CONFIG LINES TO DISPLAY DESKTOP VERSION
+          lastLine = lastLineDesktop;
+          aText.push(
+               bashIdentifier + helpLine,
+               lastLineDesktop
+          );          
+          window.mobile = false;
     }
 }
