@@ -22,8 +22,8 @@ function pageSkills(elem){
             aText.push(
                 bashIdentifier + elem,
                 '<br><br><strong> add flag to select skill: </strong>',
-                ' <button onclick=\"verifyUserInput(\'skills -t\');\">technical skills</button> ',
-                ' <button onclick=\"verifyUserInput(\'skills -l\');\">language skills</button>',
+                ' <button onclick=\"verifyUserInput(\'skills -t\');\">t - technical skills</button> ',
+                ' <button onclick=\"verifyUserInput(\'skills -l\');\">l - language skills</button>',
                 "<br>example: <strong>'skills -l'</strong> to select language skills<br><br>",
                 lastLine
             );
