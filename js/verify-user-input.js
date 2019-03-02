@@ -53,15 +53,17 @@ function helpCommands(elem){
      switch(elem){          
           case 'help':
                aText.pop(aText.length - 1);  
+               aText.push(
+                    bashIdentifier + elem,
+                    '<br><br><strong>help:</strong>',  
+               );
                if(window.mobile){
                     aText.push(
                          '# ~ i can see you\'re using a mobile device so you\'ll be prompted with some buttons',
                          '# ~ all buttons (green border) are clickable<br>'
                     );
                }
-               aText.push(
-                    bashIdentifier + elem,
-                    '<br><br><strong>help:</strong>',                    
+               aText.push(                  
                     helpPage('about', '# these are my motivations and what i like to do'),
                     helpPage('skills', '# what i\'m better at and what languages i can speak'),
                     helpPage('timeline', '# a list of things i\'ve done in the past that made me be better and learn more'),

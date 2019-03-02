@@ -67,6 +67,12 @@ textarea#setter  {
     margin: 5px;
 }
 
+img{
+    width: 20vw;
+    height: 20vw;
+    border: 3px solid #4CAF50;
+}
+
 
 /* THIS BUTTON IS VISIBLE ON MOBILE ONLY */
 button{

@@ -5,13 +5,15 @@ function pageAboutMe(elem){
     aText.pop(aText.length - 1);
     aText.push(
          bashIdentifier + elem,
-         '<br><br> <strong> about me: </strong>',
+         '<br><br> <strong> about me: </strong>',         
          "# ~ i'm a technology lover since a long time ago, like when MySpace, mIRC and MSN were still a thing",
          "# ~ i like to keep challenging myself, to try new things everyday",
          " as that's how we can improve and get better in everything we do",
          "# ~ people also call me a geek, i don\'t know why ¯\\_(ツ)_/¯ <br>",
          "# ~ i hope you're enjoying my website",
-         "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links",
+         "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links<br>",
+         "# ~ oh this is me: ",
+         '<img src="assets/personal-pic.png">',
          "<br>",
          lastLine
     );
