@@ -36,7 +36,12 @@ var prompt = ' \
 var iSpeed = 10; // time delay of print out
 var iIndex = startPosition; // start printing array at this position
 var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
+if(window.mobile){
+     var iScrollAt = 8;
+}
+else{
+     var iScrollAt = 20; // start scrolling up at this many lines
+}
 
 var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
