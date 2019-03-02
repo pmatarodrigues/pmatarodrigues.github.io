@@ -17,7 +17,7 @@ function verifyIfMobileDevice(){
           lastLine = lastLineMobile;          
           aText.push(
                bashIdentifier + helpLine,
-               lastLineMobile
+               lastLine
           );
           window.mobile = true;              // GLOBAL VARIABLE TO FACILIATE USE
      } else{
@@ -25,7 +25,7 @@ function verifyIfMobileDevice(){
           lastLine = lastLineDesktop;
           aText.push(
                bashIdentifier + helpLine,
-               lastLineDesktop
+               lastLine
           );          
           window.mobile = false;
     }

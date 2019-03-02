@@ -24,7 +24,7 @@ function typewriter(speedValue){
 
      // GET ELEMENT INPUT WHEN PRESS ENTER
      var elem = document.getElementById("setter");
-     if(!windows.mobile){
+     if(!window.mobile){
           elem.focus();
           elem.select();
      }    

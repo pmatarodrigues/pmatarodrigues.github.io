@@ -49,29 +49,19 @@ function pageCommands(elem){
 function helpCommands(elem){          
      switch(elem){          
           case 'help':
-               aText.pop(aText.length - 1);    
-               if(!window.mobile){
-                    aText.push(
-                         bashIdentifier + elem,
-                        '<br><br><strong>help:</strong>',
-                        '<pre> <strong>> about </strong> &#9; # these are my motivations and what i like to do</pre>',
-                        '<pre> <strong>> skills </strong> &#9; # what i\'m better at and what languages i can speak</pre>',
-                        '<pre> <strong>> timeline </strong> &#9; # a list of things i\'ve done in the past that made me be better and learn more</pre>',
-                        '<pre> <strong>> contacts </strong> &#9; # if you want to get in touch with me </pre><br><br>',
-                        lastLine
-                    )
-               } else{
-                    aText.push(
-                         bashIdentifier + elem,
-                        '<br><br><strong>help:</strong>',
-                        '<pre> <button onclick=\"verifyUserInput(\'about\');\">about</button> &#9; # these are my motivations and what i like to do</pre>',
-                        '<pre> <button onclick=\"verifyUserInput(\'skills\');\">skills</button> &#9; # what i\'m better at and what languages i can speak</pre>',
-                        '<pre> <button onclick=\"verifyUserInput(\'timeline\');\">timeline</button> &#9; # a list of things i\'ve done in the past that made me be better and learn more</pre>',
-                        '<pre> <button onclick=\"verifyUserInput(\'contacts\');\">contacts</button> &#9; # if you want to get in touch with me </pre><br><br>',
-                        lastLine
-                         
-                    );
-               }
+               aText.pop(aText.length - 1);  
+               aText.push(
+                    bashIdentifier + elem,
+                    '<br><br><strong>help:</strong>',
+                    '# ~ i can see you\'re using a mobile device so you\'ll be prompted with some buttons',
+                    '# ~ all buttons (green border) are clickable<br>',
+                    helpPage('about', '# these are my motivations and what i like to do'),
+                    helpPage('skills', '# what i\'m better at and what languages i can speak'),
+                    helpPage('timeline', '# a list of things i\'ve done in the past that made me be better and learn more'),
+                    helpPage('contacts', '# if you want to get in touch with me'),
+                    '<br>',
+                    lastLine
+               );                 
                typewriter(iSpeed);
                return true;
           case 'clear':
@@ -86,4 +76,13 @@ function helpCommands(elem){
                return false;
           
     }
+}
+
+
+function helpPage(textButton, descriptionButton){
+     if(!window.mobile){
+          return '<pre> <strong>>' + textButton + '</strong> &#9; ' + descriptionButton + '</pre>';
+     } else{
+          return '<pre> <button onclick=\"verifyUserInput(\'' +  textButton + '\');\">' + textButton + '</button> &#9; ' + descriptionButton + '</pre>';
+     }
 }
