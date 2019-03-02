@@ -120,6 +120,7 @@ button:active{
         margin: 0 auto;
         margin-bottom: 10vw;        
         display: block;
+        border: 0;
     }
 
 
