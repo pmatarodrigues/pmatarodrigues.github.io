@@ -13,8 +13,7 @@ function pageAboutMe(elem){
          "# ~ i hope you're enjoying my website",
          "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links<br>",
          "# ~ oh and btw, this is me: ",
-         '<img src="assets/personal-pic.png">',
-         "<br>",
+         '<img src="assets/personal-pic.png"><br>',
          lastLine
     );
     typewriter(iSpeed); 
