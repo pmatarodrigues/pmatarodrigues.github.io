@@ -106,7 +106,7 @@ button:active{
     .portrait-mode{
         display: block;
         margin: 0 auto;
-        margin-top: 10vh;
+        margin-top: 5vh;
         font-size: 20px;
     }
 
