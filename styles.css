@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 *{
+    font-display: fallback;
     font-family: 'Roboto Mono', monospace;
     background-color: black;
     cursor: none;
