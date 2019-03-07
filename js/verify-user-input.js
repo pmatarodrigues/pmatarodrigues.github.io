@@ -19,7 +19,7 @@ function pageCommands(elem){
                return true;
           } else{
                verifyBlogPost(elem);
-               return true;
+               return;
           }
      } else{
           switch(elem){

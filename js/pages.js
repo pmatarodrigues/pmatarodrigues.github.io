@@ -268,23 +268,36 @@ async function verifyBlogPost(elem){
             data = data.getElementsByTagName("channel")[0].getElementsByTagName("item");
             // LOOP THROUGH ALL ELMENTS
             // GETS MEDIUMPOST CLASS WITH TITLE, CONTENT AND DATE OF EACH BLOG POST
+            var exists;
             for(var i = 0; i < data.length; i++){
                 if(elem.substring(6, elem.length) == i){
+                    exists = true;
                     var title = data[i].getElementsByTagName("title")[0].textContent;
                     var content = data[i].getElementsByTagName("content:encoded")[0].textContent;
                     var date = data[i].getElementsByTagName("pubDate")[0].textContent;
                     mediumPostElement = new mediumPost(title, content, date);                    
 
                     var html = writeMediumPost(title, content, date);                                    
-                }                                   
+                } else{
+                    exists = false;
+                }                        
             }                        
 
-            aText.push(
-                html,
-                '<br>',
-                lastLine,
-            );
-            typewriter(0);   
+            if(exists){
+                aText.push(
+                    html,
+                    '<br>',
+                    lastLine,
+                );
+            } else{
+                aText.push(
+                    '<br>! ~ blog post with <strong>number ' + elem.substring(6, elem.length) + '</strong> not found',
+                    "<strong class='show-desktop'>Type 'blog' to see the available posts </strong>",
+                    '<br>',
+                    lastLine
+                )
+            }
+            typewriter(0);
             
         })
         .catch(error => console.error("Error: ", error))
