@@ -15,17 +15,19 @@ function typewriter(speedValue){
           iTextPos = 0;
           iIndex++;
           if ( iIndex != aText.length ) {
-          iArrLength = aText[iIndex].length;
-          setTimeout("typewriter()", 50);          
+               iArrLength = aText[iIndex].length;
+               setTimeout("typewriter()", 50); 
           }
      } else {
           setTimeout("typewriter()", speedValue);
-     }
+     } 
 
      // GET ELEMENT INPUT WHEN PRESS ENTER
      var elem = document.getElementById("setter");
-     if(!window.mobile){
-          elem.focus();
-          elem.select();
-     }    
+     if(!window.mobile ){
+          if(iIndex == aText.length){
+               elem.focus();
+               elem.select();
+          }
+     }   
 }

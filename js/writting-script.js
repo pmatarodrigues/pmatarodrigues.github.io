@@ -1,3 +1,4 @@
+
 // set up text to print, each item in array is new line
 
 var startPosition = 5;
@@ -40,7 +41,7 @@ if(window.mobile){
      var iScrollAt = 8;
 }
 else{
-     var iScrollAt = 20; // start scrolling up at this many lines
+     var iScrollAt = 12; // start scrolling up at this many lines
 }
 
 var iTextPos = 0; // initialise text position
@@ -58,4 +59,3 @@ window.onresize = function(){
 if(verifyOrientation()){
      typewriter(iSpeed);
 }
-

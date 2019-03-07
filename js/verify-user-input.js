@@ -13,40 +13,50 @@ function verifyUserInput(elem){
 }
 
 function pageCommands(elem){
-     switch(elem){
-          case 'about':
-               pageAboutMe(elem);              
+     if(elem.includes("blog")){
+          if(elem == 'blog'){
+               pageBlog(elem);
                return true;
-          case 'skills':
-               pageSkills(elem);
+          } else{
+               verifyBlogPost(elem);
                return true;
-          case 'skills -t':
-               pageSkills(elem);
-               return true;               
-          case 'skills -l':
-               pageSkills(elem);
-               return true;
-          case 'timeline':
-               pageTimeline(elem);
-               return true;
-          case 'contacts':
-               pageContacts(elem);
-               return true;
-          case 'contacts -l':
-               pageContacts(elem);
-               return true;
-          case 'contacts -t':
-               pageContacts(elem);
-               return true;
-          case 'contacts -g':
-               pageContacts(elem);
-               return true;
-          case 'contacts -m':
-               pageContacts(elem);
-               return true;
-          default:
-               return false;
-     }
+          }
+     } else{
+          switch(elem){
+               case 'about':
+                    pageAboutMe(elem);              
+                    return true;
+               case 'skills':
+                    pageSkills(elem);
+                    return true;
+               case 'skills -t':
+                    pageSkills(elem);
+                    return true;               
+               case 'skills -l':
+                    pageSkills(elem);
+                    return true;
+               case 'timeline':
+                    pageTimeline(elem);
+                    return true;
+               case 'contacts':
+                    pageContacts(elem);
+                    return true;
+               case 'contacts -l':
+                    pageContacts(elem);
+                    return true;
+               case 'contacts -t':
+                    pageContacts(elem);
+                    return true;
+               case 'contacts -g':
+                    pageContacts(elem);
+                    return true;
+               case 'contacts -m':
+                    pageContacts(elem);
+                    return true;
+               default:
+                    return false;
+          }
+     }     
 }
 
 function helpCommands(elem){          
@@ -68,6 +78,7 @@ function helpCommands(elem){
                     helpPage('skills', '# what i\'m better at and what languages i can speak'),
                     helpPage('timeline', '# a list of things i\'ve done in the past that made me be better and learn more'),
                     helpPage('contacts', '# if you want to get in touch with me'),
+                    helpPage('blog', '&#9; # my opinion about some topics and news related to technology'),
                     '<br>',
                     lastLine
                );                 

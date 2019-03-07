@@ -74,6 +74,58 @@ img{
 }
 
 
+/* BLOG POSTS */
+
+.blog-post-content{
+    width: 50%;
+    border: 2vw double #4CAF50;
+    margin: 0 auto;
+    padding: 8vw;
+}
+.blog-post-content > .content{
+    text-align: justify;
+}
+.blog-post-content > .content > img{
+    display: none;
+}
+.blog-post-content > .content img{
+    text-align: center;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.blog-post-content figcaption{
+    font-size: 10px;
+    padding: 20px;
+}
+.blog-post-content blockquote{
+    font-style: italic;
+    border-style: none none none solid; 
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, .5);
+}
+.blog-post-content > .title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.blog-post-content > .date{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog-post-content pre{
+    opacity: 0.6;
+    margin: 0 auto;
+}
+.blog-post-content h4{
+    font-size: 25px;
+}
+.blog-post-content h3{
+    font-size: 40px;
+}
+
 /* THIS BUTTON IS VISIBLE ON MOBILE ONLY */
 button{
     border: 2px solid #4CAF50;

@@ -200,3 +200,94 @@ function pageContacts(elem){
 
 }
 
+
+async function pageBlog(elem){    
+
+    aText.pop(aText.length - 1);    
+    aText.push(
+        bashIdentifier + elem,
+        '<br><br><strong>add flag to select blog post </strong>',
+        "example: <strong>'blog -3'</strong> to open my post number [3]",
+        '<br><strong> blog posts: </strong>',
+
+    );
+   
+    var url = "https://medium.com/feed/@pmatarodrigues";      
+    var mediumBlogPosts = new Array();    
+
+    // ASYNC FUNCTION TO GET XML ELEMENTS FROM MEDIUM RSS
+    await fetch(url, {method: 'GET'})
+        .then(response => response.text())
+        // GETS XML TO STRING
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(data => {
+            data = data.getElementsByTagName("channel")[0].getElementsByTagName("item");
+            // LOOP THROUGH ALL ELMENTS
+            // GETS MEDIUMPOST CLASS WITH TITLE, CONTENT AND DATE OF EACH BLOG POST
+            for(var i = 0; i < data.length; i++){        
+                var title = data[i].getElementsByTagName("title")[0].textContent;
+                var content = data[i].getElementsByTagName("content:encoded")[0].textContent;
+                var date = data[i].getElementsByTagName("pubDate")[0].textContent;
+                mediumPostElement = new mediumPost(title, content, date);
+
+                mediumBlogPosts.push(mediumPostElement);                   
+
+                aText.push(
+                    "[" + i + "] ~ " + mediumBlogPosts[i].title,
+                );                                          
+            }            
+            window.mediumBlogPosts = mediumBlogPosts;
+        })
+        .catch(error => console.error("Error: ", error))
+
+    aText.push(
+        '<br>',
+        lastLine
+    );
+    typewriter(iSpeed);   
+}
+
+async function verifyBlogPost(elem){    
+
+    var url = "https://medium.com/feed/@pmatarodrigues";      
+    var mediumBlogPosts = new Array();   
+
+    document.getElementById("text-typing").innerHTML = "";
+    iIndex = 0;
+    aText.splice(1, aText.length);
+    aText.push(
+        bashIdentifier + elem
+    );
+
+    // ASYNC FUNCTION TO GET XML ELEMENTS FROM MEDIUM RSS
+    await fetch(url, {method: 'GET'})
+        .then(response => response.text())
+        // GETS XML TO STRING
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(data => {
+            data = data.getElementsByTagName("channel")[0].getElementsByTagName("item");
+            // LOOP THROUGH ALL ELMENTS
+            // GETS MEDIUMPOST CLASS WITH TITLE, CONTENT AND DATE OF EACH BLOG POST
+            for(var i = 0; i < data.length; i++){
+                if(elem.substring(6, elem.length) == i){
+                    var title = data[i].getElementsByTagName("title")[0].textContent;
+                    var content = data[i].getElementsByTagName("content:encoded")[0].textContent;
+                    var date = data[i].getElementsByTagName("pubDate")[0].textContent;
+                    mediumPostElement = new mediumPost(title, content, date);                    
+
+                    var html = writeMediumPost(title, content, date);                                    
+                }                                   
+            }                        
+
+            aText.push(
+                html,
+                '<br>',
+                lastLine,
+            );
+            typewriter(0);   
+            
+        })
+        .catch(error => console.error("Error: ", error))
+    
+}
+
