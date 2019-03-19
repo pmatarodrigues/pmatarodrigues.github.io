@@ -13,50 +13,44 @@ function verifyUserInput(elem){
 }
 
 function pageCommands(elem){
-     if(elem.includes("blog")){
-          if(elem == 'blog'){
-               pageBlog(elem);
+     switch(elem){
+          case 'about':
+               pageAboutMe(elem);              
                return true;
-          } else{
-               verifyBlogPost(elem);
-               return;
-          }
-     } else{
-          switch(elem){
-               case 'about':
-                    pageAboutMe(elem);              
-                    return true;
-               case 'skills':
-                    pageSkills(elem);
-                    return true;
-               case 'skills -t':
-                    pageSkills(elem);
-                    return true;               
-               case 'skills -l':
-                    pageSkills(elem);
-                    return true;
-               case 'timeline':
-                    pageTimeline(elem);
-                    return true;
-               case 'contacts':
-                    pageContacts(elem);
-                    return true;
-               case 'contacts -l':
-                    pageContacts(elem);
-                    return true;
-               case 'contacts -t':
-                    pageContacts(elem);
-                    return true;
-               case 'contacts -g':
-                    pageContacts(elem);
-                    return true;
-               case 'contacts -m':
-                    pageContacts(elem);
-                    return true;
-               default:
-                    return false;
-          }
-     }     
+          case 'skills':
+               pageSkills(elem);
+               return true;
+          case 'skills -t':
+               pageSkills(elem);
+               return true;               
+          case 'skills -l':
+               pageSkills(elem);
+               return true;
+          case 'timeline':
+               pageTimeline(elem);
+               return true;
+          case 'contacts':
+               pageContacts(elem);
+               return true;
+          case 'contacts -l':
+               pageContacts(elem);
+               return true;
+          case 'contacts -t':
+               pageContacts(elem);
+               return true;
+          case 'contacts -g':
+               pageContacts(elem);
+               return true;
+          case 'contacts -m':
+               pageContacts(elem);
+               return true;
+          case 'blog':
+               var win = window.open ('blog','_blank');
+               win.focus();
+               return true;
+          default:
+               return false;
+     }
 }
 
 function helpCommands(elem){          
