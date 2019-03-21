@@ -7,7 +7,7 @@ async function getPosts(){
     var mediumBlogPosts = new Array(); 
     var fileNames = new Array();  
 
-
+    // FILES NAMES MUST BE ADDED HERE
     fileNames.push("facebook-is-dying.md");
     fileNames.push("flutter-reasons-you-will-fall-in-love.md");
     fileNames.push("net-neutrality-is-in-danger-you-should-care.md");
@@ -17,9 +17,7 @@ async function getPosts(){
         fetch(url)
             .then(response => response.text())
             // GETS XML TO STRING
-            .then(data => {                 
-                console.log(data);
-                
+            .then(data => {                                 
                 var post = document.createElement('div');
                 post.className = "blog-content";
                 // TRANSFORM MARKDOWN CONTENT INTO HTML
@@ -31,58 +29,6 @@ async function getPosts(){
             })                
     });
 
-    // await fetch(url, {method: 'GET'})
-    //     .then(response => response.text())
-    //     // GETS XML TO STRING
-    //     .then(data => {        
-            
-    //         console.log("STARTS --------_>");
-            
-    //         jQuery(function($){
-    //             $(data).find("td > a").each(function(text){
-    //                 if(openFile($(this).attr("href"))){
-    //                     fileNames.push($(this).attr("href"));
-    //                 }
-    //             });
-
-    //             fileNames.push("facebook-is-dying.md");
-    //             fileNames.push("flutter-reasons-you-will-fall-in-love.md");
-    //             fileNames.push("net-neutrality-is-in-danger-you-should-care.md");
-
-    //             fileNames.forEach(file => {
-    //                 url = "./blog-posts/" + file;
-    //                 fetch(url)
-    //                     .then(response => response.text())
-    //                     // GETS XML TO STRING
-    //                     .then(data => {                            
-    //                         console.log(data);
-                            
-    //                         var post = document.createElement('div');
-    //                         post.className = "blog-content";
-    //                         // TRANSFORM MARKDOWN CONTENT INTO HTML
-    //                         post.innerHTML = md.render(data);
-    //                         // ADD ALL POSTS INTO ARRAY
-    //                         mediumBlogPosts.push(post);
-    //                         // APPEND POSTS TO HTML
-    //                         document.getElementById("blog-body").appendChild(post);
-    //                     })                
-    //             });
-
-    //         });
-            
-    //         // VERIFY IF IT'S A VALID FILE
-    //         function openFile(file) {
-    //             var extension = file.substr( (file.lastIndexOf('.') +1) );
-    //             switch(extension) {
-    //                 case 'md':
-    //                     return true;
-    //                     break;
-    //                 default:
-    //                     return false;
-    //             }
-    //         };            
-                        
-    // });
 }
 
 getPosts();
