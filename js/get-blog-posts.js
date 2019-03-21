@@ -10,7 +10,10 @@ async function getPosts(){
     await fetch(url, {method: 'GET'})
         .then(response => response.text())
         // GETS XML TO STRING
-        .then(data => {            
+        .then(data => {        
+            
+            console.log("STARTS --------_>");
+            
             jQuery(function($){
                 $(data).find("td > a").each(function(text){
                     if(openFile($(this).attr("href"))){
@@ -18,12 +21,16 @@ async function getPosts(){
                     }
                 });
 
+                console.log(fileNames);
+
+
+
                 fileNames.forEach(file => {
                     url = "./blog-posts/" + file;
                     fetch(url)
                         .then(response => response.text())
                         // GETS XML TO STRING
-                        .then(data => {
+                        .then(data => {                            
                             console.log(data);
                             
                             var post = document.createElement('div');
