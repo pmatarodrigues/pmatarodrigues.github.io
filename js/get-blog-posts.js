@@ -24,6 +24,8 @@ async function getPosts(){
                         .then(response => response.text())
                         // GETS XML TO STRING
                         .then(data => {
+                            console.log(data);
+                            
                             var post = document.createElement('div');
                             post.className = "blog-content";
                             // TRANSFORM MARKDOWN CONTENT INTO HTML
