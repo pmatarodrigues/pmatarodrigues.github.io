@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Viga');
+
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+    padding: 20px;
+}
+h3{
+    padding: 20px;
+    font-size: 20px;
+}
+h4{
+    text-align: center;
+    opacity: 0.5;
+}
+
+blockquote{
+    border-left: 1px solid white;
+    padding: 20px;
+}
+
+img{
+    max-width: 45vw;
+    min-width: 45vw;
+}
+
+
+pre{
+    background-color: #141414;    
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px -18px #4CAF50;
+}
+
+@media only screen and (max-width: 850px){    
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    img{
+        max-width: 80vw;
+        min-width: 80vw;
+    }
+    
+    pre{
+        max-width: 80vw;
+    }
+}

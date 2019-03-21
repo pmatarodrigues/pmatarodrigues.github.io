@@ -1,7 +1,9 @@
 
 # Net Neutrality is in Danger and You Should Care About It
+#### 05 feb 2017
+---
 
-## Open Internet may be at risk of extinction.
+### Open Internet may be at risk of extinction.
 
 ![](https://cdn-images-1.medium.com/max/1000/1*1Sp40V-pe4gW1tdSfs1gDA.jpeg)
 
@@ -9,13 +11,13 @@ Net neutrality is the idea that Internet service providers (ISPs) and
 governments should treat all data on the Internet the same, not charging
 anything depending on the content, treating all websites and services the same.
 
-#### You can use it has much as you want, for anything you want.
+### You can use it has much as you want, for anything you want.
 
 Net Neutrality has made the internet a giant space of free speech and
 innovation. It gives all individuals and companies the same opportunity to find
 an audience to whom share their ideas.
 
-### What If They Kill Net Neutrality?
+## # What If They Kill Net Neutrality?
 
 At the moment, all your data goes through a single connection and you pay a
 monthly fee.
@@ -31,7 +33,7 @@ websites to deliver their content to customers faster.**
 > speeds would be relegated to the background, because no one wants a slow
 website.
 
-### The End is Near
+## # The End is Near
 
 In 2015, the Federal Communications Commission’s (FCC) chairman, Tom Wheeler
 **passed the Open Internet Order to benefit net neutrality**, after decades of
@@ -46,6 +48,3 @@ media, and the relationship of Trump with modern types of media**, we can almost
 certainly say that he’s not very much in favor of it.
 
 ### The future of Open Internet is in danger.
-
-
-#### 05 feb 2017

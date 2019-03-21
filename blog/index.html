@@ -1,5 +1,5 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+<script src="../js/lib/jquery-3.3.1.min.js"></script>
+<script src="../js/lib/markdown-it.min.js"></script>
 
 <script src="../js/get-blog-posts.js"></script>
 
@@ -14,26 +14,35 @@
                 name='viewport' 
                 content='width=device-width, initial-scale=0.6, maximum-scale=0.6, user-scalable=0' />  
             <link rel=icon href="assets/personal-pic.png">
-            <link rel="stylesheet" type="text/css" href="blog.css">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <link rel="stylesheet" type="text/css" href="posts.css">
     </head>
     <body>
-        <div class="blog-header">
-            <strong>Pedro Mata Rodrigues $ Blog</strong>
-            <p>my opinion about some topics and news related to technology</p>                    
+        <div class="content-left">
+            <div class="text">
+                <strong>Pedro Mata Rodrigues $ BLOG</strong>                
+                <p>my opinion about some topics and news related to technology</p>
+                <div class="btn-back-to-main">
+                        <a href=".." target="_blank">
+                            Click here to open my full website
+                            <b class="cursor" id="cursor"></b>
+                        </a>
+                </div>
+            </div>
         </div>
             
-        <div class="content">        
+        <div class="content-right">      
             <div id="blog-body" markdown="1">
             </div>            
         </div>
 
-        <div class="blog-footer">
-                <div class="btn-back-to-main">
-                        <a href=".." target="_blank">Open my full website
-                        <b class="cursor" id="cursor"></b>
-                        </a>
-                </div>
+        <!-- <div class="blog-footer">
+            <div class="btn-back-to-main">
+                    <a href=".." target="_blank">Open my full website
+                    <b class="cursor" id="cursor"></b>
+                    </a>
             </div>
+        </div> -->
     </body>
 
 </html>

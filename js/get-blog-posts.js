@@ -1,10 +1,11 @@
+
 async function getPosts(){   
+
+    var md = window.markdownit();
+
     var url = "blog-posts/";      
     var mediumBlogPosts = new Array(); 
     var fileNames = new Array();  
-
-    var converter = new showdown.Converter();
-    converter.setFlavor('github');
 
     await fetch(url, {method: 'GET'})
         .then(response => response.text())
@@ -16,17 +17,24 @@ async function getPosts(){
                         fileNames.push($(this).attr("href"));
                     }
                 });
-                fileNames.forEach(file => {
-                    url = "/blog-posts/" + file;
 
+                fileNames.forEach(file => {
+                    url = "./blog-posts/" + file;
                     fetch(url)
                         .then(response => response.text())
                         // GETS XML TO STRING
-                        .then(data => { 
-                            document.getElementById("blog-body").innerHTML = converter.makeHtml(data);
-                            
+                        .then(data => {
+                            var post = document.createElement('div');
+                            post.className = "blog-content";
+                            // TRANSFORM MARKDOWN CONTENT INTO HTML
+                            post.innerHTML = md.render(data);
+                            // ADD ALL POSTS INTO ARRAY
+                            mediumBlogPosts.push(post);
+                            // APPEND POSTS TO HTML
+                            document.getElementById("blog-body").appendChild(post);
                         })                
                 });
+
             });
             
             // VERIFY IF IT'S A VALID FILE
@@ -43,6 +51,5 @@ async function getPosts(){
                         
     });
 }
-
 
 getPosts();
