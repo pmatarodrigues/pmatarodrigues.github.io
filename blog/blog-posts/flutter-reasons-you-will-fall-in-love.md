@@ -1,5 +1,5 @@
 # Flutter — Reasons Why You Will Fall In Love With It
-#### 21-08-2018
+#### 21 aug 2018
 ---
 
 

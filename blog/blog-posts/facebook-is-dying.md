@@ -1,6 +1,6 @@
 
 # Facebook is Dying
-#### 02-02-2017
+#### 02 feb 2017
 ---
 
 ![alt-text](https://cdn-images-1.medium.com/max/1000/1*xuV8uBeC-J3GiCC5nnYc-A.png "Facebook dark")
