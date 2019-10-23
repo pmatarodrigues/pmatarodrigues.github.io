@@ -7,7 +7,7 @@
     cursor: none;
     color: white;
 }
-body{    
+body{
     padding: 10vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -15,7 +15,7 @@ body{
     color: white;
     display: flex;
     justify-content: left;
-    text-align: left;    
+    text-align: left;
 }
 
 .portrait-mode{
@@ -39,7 +39,7 @@ body{
         blinking 1s step-end infinite;
     animation: typing 3s steps(13, end) forwards,
         blinking 1s step-end infinite;
-} 
+}
 
 input{
     border: 0;
@@ -102,7 +102,7 @@ img{
 }
 .blog-post-content blockquote{
     font-style: italic;
-    border-style: none none none solid; 
+    border-style: none none none solid;
     border-width: 3px;
     border-color: rgba(255, 255, 255, .5);
 }
@@ -139,6 +139,26 @@ button:active{
     color: black;
 }
 
+.skill-level-high{
+  color: #2e7d32;
+}
+
+.skill-level-medium-high{
+  color: #43a047;
+}
+
+.skill-level-medium{
+  color: #81c784;
+}
+
+.skill-level-medium-low{
+  color: #fff176;
+}
+
+.skill-level-low{
+  color: #ffd54f;
+}
+
 
 @-webkit-keyframes blinking {
     from, to { border-color: transparent; }
@@ -171,7 +191,7 @@ button:active{
         animation: spin1 2s infinite linear;
         width: 20vw;
         margin: 0 auto;
-        margin-bottom: 10vw;        
+        margin-bottom: 10vw;
         display: block;
         border: 0;
     }
@@ -185,7 +205,7 @@ button:active{
     @-moz-keyframes spin1 {
         0% { -moz-transform: rotate(0deg);}
         50% {-moz-transform: rotate(45deg);}
-        100% { -moz-transform: rotate(0deg);}    
+        100% { -moz-transform: rotate(0deg);}
     }
     @-o-keyframes spin1 {
         0% { -o-transform: rotate(0deg);}
@@ -201,12 +221,12 @@ button:active{
         0% { transform: rotate(0deg);}
         50% {transform: rotate(45deg);}
         100% { transform: rotate(0deg);}
-    } 
+    }
 
 }
 
 
-@media only screen and (min-width: 500px){    
+@media only screen and (min-width: 500px){
     body{
         height: 20vh;
         padding: 2vw;

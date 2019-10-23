@@ -5,10 +5,9 @@ function pageAboutMe(elem){
     aText.pop(aText.length - 1);
     aText.push(
          bashIdentifier + elem,
-         '<br><br> <strong> about me: </strong>',         
-         "# ~ i'm a technology lover since a long time ago, like when MySpace, mIRC and MSN were still a thing",
-         "# ~ i like to keep challenging myself, to try new things everyday",
-         " as that's how we can improve and get better in everything we do",
+         '<br><br> <strong> about me: </strong>',
+         "# ~ i'm a technology lover since I was a little kid",
+         "# ~ i like to keep challenging myself and try new things everyday",
          "# ~ people also call me a geek, i don\'t know why ¯\\_(ツ)_/¯ <br>",
          "# ~ i hope you're enjoying my website",
          "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links<br>",
@@ -16,7 +15,7 @@ function pageAboutMe(elem){
          '<img src="assets/personal-pic.png"><br>',
          lastLine
     );
-    typewriter(iSpeed); 
+    typewriter(iSpeed);
 }
 
 
@@ -29,7 +28,7 @@ function pageSkills(elem){
                 bashIdentifier + elem,
                 '<br><br><strong> add flag to select skill: </strong>',
                 pageSkillsElement('tech skills', 't'),
-                pageSkillsElement('language skills', 'l'),                
+                pageSkillsElement('language skills', 'l'),
                 "<br>example: <strong>'skills -l'</strong> to select language skills<br><br>",
                 lastLine
             );
@@ -40,17 +39,18 @@ function pageSkills(elem){
             aText.push(
                 bashIdentifier + elem,
                 '<br><br><strong> technical skills: </strong>',
-                skillBar('java &#09;', 60),
-                skillBar('javascript &#09;', 70),
-                skillBar('c &#09;&#09;', 50),
-                skillBar('sql &#09;&#09;', 60),
-                skillBar('nodejs &#09;', 40),
-                skillBar('git &#09;&#09;', 50),
-                skillBar('react_native', 40),
-                skillBar('react &#09;', 30),
-                skillBar('photoshop &#09;', 80),
-                skillBar('illustrator &#09;', 60),
-                '<br>',            
+                skillElement('python', 2),
+                skillElement('java', 2),
+                skillElement('javascript', 3),
+                skillElement('c', 2),
+                skillElement('sql', 3),
+                skillElement('nodejs', 3),
+                skillElement('git', 4),
+                skillElement('react_native', 1),
+                skillElement('react', 1),
+                skillElement('photoshop', 4),
+                skillElement('illustrator', 3),
+                '<br>',
                 lastLine
             );
             typewriter(iSpeed);
@@ -70,6 +70,29 @@ function pageSkills(elem){
     }
 }
 
+function skillElement(skillName, skillLevel){
+  switch (skillLevel) {
+    case 0:
+      level = 'skill-level-low';
+      break;
+    case 1:
+      level = 'skill-level-medium-low';
+      break;
+    case 2:
+      level = 'skill-level-medium';
+      break;
+    case 3:
+      level = 'skill-level-medium-high';
+      break;
+    case 4:
+      level = 'skill-level-high';
+      break;
+    default:
+      break;
+  }
+  return ' <pre> <i class="' + level + '">></i><i> ' + skillName + '</i></pre>';
+
+}
 
 function skillBar(skillName, skillPoints){
     var skillBar = '[!';
@@ -101,10 +124,12 @@ function pageTimeline(elem){
          timelineElement('Refood Volunteering &#09;&#09;&#09;', '2017', 'Volunteering at the Refood organization of Viana do Castelo'),
          timelineElement('Web Security - HandsOn &#09;&#09;', '2018', 'Workshop at the National Meeting of Computer Science Students.'),
          timelineElement('Internship at Picus &#09;&#09;&#09;', '2018', 'Summer Bootcamp promoted by Picus'),
+         timelineElement('Degree in Computer Science &#09;&#09;', '2016-2019', 'Completed my degree in Computer Science at IPVC'),
+         timelineElement('Master\'s degree in Computer Science &#09;', '2019-', 'Started a master\'s degree in Computer Science at Universidade do Minho'),
          '<br>',
          lastLine
     );
-    typewriter(iSpeed); 
+    typewriter(iSpeed);
 }
 
 function timelineElement(elementName, elementYear, elementDescription){
@@ -144,61 +169,70 @@ function pageContacts(elem){
                     lastLine
                 );
             }
-            
-            typewriter(iSpeed); 
+
+            typewriter(iSpeed);
             break;
         case 'contacts -t':
             aText.pop(aText.length - 1);
             aText.push(
                 bashIdentifier + elem,
-                '<br><br><strong>opening my twitter page...</strong>',                                
+                '<br><br><strong>opening my twitter page...</strong>',
                 '<br>',
                 lastLine
             );
-            typewriter(iSpeed); 
+            typewriter(iSpeed);
             var win = window.open('https://twitter.com/astrolopitech', '_blank');
             win.focus();
-            break;   
+            break;
         case 'contacts -l':
             aText.pop(aText.length - 1);
             aText.push(
                 bashIdentifier + elem,
-                '<br><br><strong>opening my linkedin page...</strong>',                                
+                '<br><br><strong>opening my linkedin page...</strong>',
                 '<br>',
                 lastLine
             );
-            typewriter(iSpeed); 
+            typewriter(iSpeed);
             var win = window.open('https://linkedin.com/in/pmatarodrigues', '_blank');
             win.focus();
-            break;          
+            break;
         case 'contacts -g':
             aText.pop(aText.length - 1);
             aText.push(
                 bashIdentifier + elem,
-                '<br><br><strong>opening my github page...</strong>',                                
+                '<br><br><strong>opening my github page...</strong>',
                 '<br>',
                 lastLine
             );
-            typewriter(iSpeed); 
+            typewriter(iSpeed);
             var win = window.open('https://github.com/pmatarodrigues', '_blank');
             win.focus();
-            break;    
+            break;
         case 'contacts -m':
             aText.pop(aText.length - 1);
             aText.push(
                 bashIdentifier + elem,
                 '<br><br><strong>opening your default email client...</strong>',
-                'don\'t forget to say who you are :)',
+                'don\'t forget to identify yourself :)',
                 '<br>',
                 lastLine
             );
-            typewriter(iSpeed); 
-            var win = window.open('mailto:pmatarodrigues@pm.me', '_self');
+            typewriter(iSpeed);
+            var win = window.open('mailto:me@pmatarodrigues.com', '_self');
             win.focus();
-            break;                  
+            break;
     }
 
 }
 
-
-
+function pageProjects(elem){
+  aText.pop(aText.length - 1);
+  aText.push(
+       bashIdentifier + elem,
+       '<br><br> <strong> my projects: </strong>',
+       '/!\\  this page is still under development',
+       '<br>',
+       lastLine
+  );
+  typewriter(iSpeed);
+}

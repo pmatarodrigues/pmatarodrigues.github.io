@@ -21,11 +21,11 @@ var helpLine;
 
 var aText = new Array(
      topLogo,
-     bashIdentifier + "hey! I'm Pedro Mata Rodrigues", 
-     bashIdentifier + "welcome to my personal website", 
+     bashIdentifier + "hey! I'm Pedro Mata Rodrigues",
+     bashIdentifier + "welcome to my personal website",
      bashIdentifier + "i know. This looks... eh... different",
      bashIdentifier + "but this is what my computer looks like everyday",
-     bashIdentifier + "so I thought I could share a little bit of my workspace with you <br>"   
+     bashIdentifier + "so I thought I could share a little bit of my workspace with you <br>"
 );
 
 verifyIfMobileDevice();
@@ -41,7 +41,7 @@ if(window.mobile){
      var iScrollAt = 8;
 }
 else{
-     var iScrollAt = 12; // start scrolling up at this many lines
+     var iScrollAt = 15; // start scrolling up at this many lines
 }
 
 var iTextPos = 0; // initialise text position
@@ -49,7 +49,7 @@ var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
 
 
-window.onresize = function(){ 
+window.onresize = function(){
      if(verifyOrientation()){
           typewriter(iSpeed);
      }
