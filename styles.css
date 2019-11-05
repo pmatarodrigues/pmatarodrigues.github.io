@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
+:root{
+  --main-background-color: #EFF2FD;
+  --terminal-background-color: #0A2341;
+  --green-color: #39FF90;
+  --terminal-title-color: #0E0E32;
+}
+
+
+
 *{
     font-display: fallback;
     font-family: 'Roboto Mono', monospace;
-    background-color: black;
     cursor: none;
     color: white;
 }
 body{
+    background-color: var(--main-background-color);
     padding: 10vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -18,13 +27,40 @@ body{
     text-align: left;
 }
 
+.terminal{
+  display: inline;
+  border-radius: 10px;
+  background-color: var(--terminal-background-color);
+  height: 90vh;
+  width: 70vw;
+  margin: 0 auto;
+  box-shadow: 20px 20px 0px 0px #A8C8F4;
+}
+.terminal-container{
+  padding: 80px 100px 100px 80px;
+  margin: 0 auto;
+}
+
+.terminal-title{
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  width: auto;
+  display: block;
+  background-color: var(--terminal-title-color);
+}
+#terminal-icon{
+    width: 1vw;
+    height: 1vw;
+    border: 0;
+}
+
 .portrait-mode{
     display: none;
 }
 
 .bash-identifier{
     opacity: 1;
-    color: #4CAF50;
+    color: var(--green-color);
 }
 
 .cursor {
@@ -71,7 +107,7 @@ textarea#setter  {
 img{
     width: 20vw;
     height: 20vw;
-    border: 3px solid #4CAF50;
+    border: 3px solid var(--green-color);
 }
 
 

@@ -118,22 +118,22 @@ function pageTimeline(elem){
     aText.push(
          bashIdentifier + elem,
          '<br><br> <strong> timeline: </strong>',
-         timelineElement('Inspire Portugal (WebSummit) &#09;', '2016', 'Participation in the WebSummit\' students reunion'),
-         timelineElement('SPEC &#09;&#09;&#09;&#09;', '2016-2017', 'Website/blog with news about the advances in the technological world'),
-         timelineElement('CyberCrime and CyberSecurity Seminars', '2017', 'Participation in two seminars at IPVC'),
-         timelineElement('Refood Volunteering &#09;&#09;&#09;', '2017', 'Volunteering at the Refood organization of Viana do Castelo'),
-         timelineElement('Web Security - HandsOn &#09;&#09;', '2018', 'Workshop at the National Meeting of Computer Science Students.'),
-         timelineElement('Internship at Picus &#09;&#09;&#09;', '2018', 'Summer Bootcamp promoted by Picus'),
-         timelineElement('Degree in Computer Science &#09;&#09;', '2016-2019', 'Completed my degree in Computer Science at IPVC'),
-         timelineElement('Master\'s degree in Computer Science &#09;', '2019-', 'Started a master\'s degree in Computer Science at Universidade do Minho'),
+         timelineElement('Inspire Portugal (WebSummit) &#09;&#09;', '2016'),
+         timelineElement('SPEC (Technology Blog) &#09;&#09;&#09;', '2016-2017'),
+         timelineElement('CyberCrime and CyberSecurity Seminars&#09;', '2017'),
+         timelineElement('Refood Volunteering &#09;&#09;&#09;&#09;', '2017'),
+         timelineElement('Web Security - HandsOn (Workshop at ENEI)&#09;', '2018'),
+         timelineElement('Internship at Picus &#09;&#09;&#09;&#09;', '2018'),
+         timelineElement('Degree in Computer Science &#09;&#09;&#09;', '2016-2019'),
+         timelineElement('Master\'s degree in Computer Science &#09;&#09;', '2019-'),
          '<br>',
          lastLine
     );
     typewriter(iSpeed);
 }
 
-function timelineElement(elementName, elementYear, elementDescription){
-    var skillFull = ' <pre> <strong>> ' + elementName + '</strong> &#09; [' + elementYear + '] &#09;&#09;' + elementDescription + '</pre>';
+function timelineElement(elementName, elementYear){
+    var skillFull = ' <pre> <strong>> ' + elementName + '</strong> &#09; [' + elementYear + '] &#09;' + '</pre>';
 
     return skillFull;
 }
