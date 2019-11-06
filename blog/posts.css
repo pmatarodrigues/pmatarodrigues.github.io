@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css?family=Viga');
 
+:root{
+  --terminal-background-color: #0A2341;
+  --green-color: #39FF90;
+  --terminal-title-color: #0E0E32;
+  --terminal-shadow-color: #A8C8F4;
+}
 
 h1{
     text-align: center;
@@ -32,13 +38,14 @@ img{
 
 
 pre{
-    background-color: #141414;    
+    color: white;
+    background-color: var(--terminal-background-color);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0px 0px 20px -18px #4CAF50;
+    box-shadow: 5px 5px 0px 0px var(--terminal-shadow-color);
 }
 
-@media only screen and (max-width: 850px){    
+@media only screen and (max-width: 850px){
     h1{
         font-size: 30px;
     }
@@ -52,7 +59,7 @@ pre{
         max-width: 80vw;
         min-width: 80vw;
     }
-    
+
     pre{
         max-width: 80vw;
     }

@@ -5,6 +5,7 @@
   --terminal-background-color: #0A2341;
   --green-color: #39FF90;
   --terminal-title-color: #0E0E32;
+  --terminal-shadow-color: #A8C8F4;
 }
 
 
@@ -34,7 +35,7 @@ body{
   height: 90vh;
   width: 70vw;
   margin: 0 auto;
-  box-shadow: 20px 20px 0px 0px #A8C8F4;
+  box-shadow: 20px 20px 0px 0px var(--terminal-shadow-color);
 }
 .terminal-container{
   padding: 80px 100px 100px 80px;
