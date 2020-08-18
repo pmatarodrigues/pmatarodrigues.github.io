@@ -49,8 +49,23 @@ function pageCommands(elem){
                win.focus();
                return true;
           case 'projects':
-                pageProjects(elem);
-                return true;
+               pageProjects(elem);
+               return true;
+          case 'projects 0':
+               pageProjects(elem);
+               return true;
+          case 'projects 1':
+               pageProjects(elem);
+               return true;
+          case 'projects 2':
+               pageProjects(elem);
+               return true;
+          case 'projects 3':
+               pageProjects(elem);
+               return true;
+          case 'projects 4':
+               pageProjects(elem);
+               return true;
           default:
                return false;
      }
@@ -66,13 +81,13 @@ function helpCommands(elem){
                );
                if(window.mobile){
                     aText.push(
-                         '# ~ i can see you\'re using a mobile device so you\'ll be prompted with some buttons',
+                         '# ~ I can see you\'re using a mobile device so you\'ll be prompted with some buttons',
                          '# ~ all buttons (green border) are clickable<br>'
                     );
                }
                aText.push(
-                    helpPage('whoami', '# these are my motivations and what i like to do'),
-                    helpPage('skills', '# what i\'m better at and what languages i can speak'),
+                    helpPage('whoami', '# these are my motivations and what I like to do'),
+                    helpPage('skills', '# what i\'m better at and what languages I can speak'),
                     helpPage('timeline', '# a list of things i\'ve done in the past that made me be better and learn more'),
                     helpPage('contacts', '# if you want to get in touch with me'),
                     helpPage('blog', '&#9; # my opinion about some topics and news related to technology'),

@@ -6,10 +6,10 @@ function pageAboutMe(elem){
     aText.push(
          bashIdentifier + elem,
          '<br><br> <strong> about me: </strong>',
-         "# ~ i'm a technology lover since I was a little kid",
-         "# ~ i like to keep challenging myself and try new things everyday",
-         "# ~ people also call me a geek, i don\'t know why ¯\\_(ツ)_/¯ <br>",
-         "# ~ i hope you're enjoying my website",
+         "# ~ I'm a technology lover since I was a little kid",
+         "# ~ I like to keep challenging myself and try new things everyday",
+         "# ~ people also call me a geek, I don\'t know why ¯\\_(ツ)_/¯ <br>",
+         "# ~ I hope you're enjoying my website",
          "# ~ if you have any question, recommendation or just wanna talk, go to my contacts page and hit me up on any of the links<br>",
          "# ~ oh and btw, this is me: ",
          '<img src="assets/personal-pic.png"><br>',
@@ -181,7 +181,7 @@ function pageContacts(elem){
                 lastLine
             );
             typewriter(iSpeed);
-            var win = window.open('https://twitter.com/astrolopitech', '_blank');
+            var win = window.open('https://twitter.com/astrolopitech', '_self');
             win.focus();
             break;
         case 'contacts -l':
@@ -193,7 +193,7 @@ function pageContacts(elem){
                 lastLine
             );
             typewriter(iSpeed);
-            var win = window.open('https://linkedin.com/in/pmatarodrigues', '_blank');
+            var win = window.open('https://linkedin.com/in/pmatarodrigues', '_self');
             win.focus();
             break;
         case 'contacts -g':
@@ -205,7 +205,7 @@ function pageContacts(elem){
                 lastLine
             );
             typewriter(iSpeed);
-            var win = window.open('https://github.com/pmatarodrigues', '_blank');
+            var win = window.open('https://github.com/pmatarodrigues', '_self');
             win.focus();
             break;
         case 'contacts -m':
@@ -226,13 +226,81 @@ function pageContacts(elem){
 }
 
 function pageProjects(elem){
-  aText.pop(aText.length - 1);
-  aText.push(
-       bashIdentifier + elem,
-       '<br><br> <strong> my projects: </strong>',
-       '/!\\  this page is still under development',
-       '<br>',
-       lastLine
-  );
-  typewriter(iSpeed);
+    switch(elem){
+        case 'projects':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br> <strong> my projects (check them by typing "projects <number>". ex: projects 0): </strong>',
+                '<br> <p> [0] SharEat - Shopping list without account.. Stack: ReactJS (FrontEnd) and NodeJS (BackEnd). Hosted on Netlify and Vultr. </p>',
+                '<p> [1] Today I Learned - Where I share simple snippets of things I learn and might be useful later. </p>',
+                '<p> [2] Boutique Belinha - First E-Commerce Project. Stack: Wordpress with WooComerce. </p>',
+                '<p> [3] Add Spaces to Glued PDF Words. Python project with the goal of learning more about Natural Language Processing. </p>',
+                '<p> [4] Image Recognition Position System - School Project. Stack: Android (Java) and OpenCV </p>',
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed);
+            break;
+        case 'projects 0':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong>opening shareat...</strong>',
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed);
+            var win = window.open('https://shareat.netlify.app/', '_blank');
+            win.focus();
+            break;
+        case 'projects 1':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong>opening TIL...</strong>',
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed);
+            var win = window.open('https://github.com/pmatarodrigues/today-i-learned', '_blank');
+            win.focus();
+            break;
+        case 'projects 2':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong>opening Boutique Belinha...</strong>',
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed);
+            var win = window.open('https://boutiquebelinha.com', '_blank');
+            win.focus();
+            break;
+        case 'projects 3':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong>opening space pdf words...</strong>',
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed);
+            var win = window.open('https://github.com/pmatarodrigues/spaces-glued-pdf-words', '_blank');
+            win.focus();
+            break;
+        case 'projects 4':
+            aText.pop(aText.length - 1);
+            aText.push(
+                bashIdentifier + elem,
+                '<br><br><strong>opening image recognition position system...</strong>',
+                '<br>',
+                lastLine
+            );
+            typewriter(iSpeed);
+            var win = window.open('https://github.com/pmatarodrigues/positioning-system-image-recognition', '_blank');
+            win.focus();
+            break;
+    }
 }

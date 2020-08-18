@@ -20,9 +20,9 @@ var helpLineMobile = "<strong class='show-desktop'>Press 'help' to see the avail
 var helpLine;
 
 var aText = new Array(
-     bashIdentifier + "hey! I'm Pedro Mata Rodrigues",
+     bashIdentifier + "hey! I'm Pedro",
      bashIdentifier + "welcome to my personal website",
-     bashIdentifier + "i know. This looks... eh... different",
+     bashIdentifier + "I know. This looks... eh... different",
      bashIdentifier + "but this is what my computer looks like everyday",
      bashIdentifier + "so I thought I could share a little bit of my workspace with you <br>"
 );
