@@ -45,7 +45,7 @@ function pageCommands(elem){
                pageContacts(elem);
                return true;
           case 'blog':
-               var win = window.open ('blog','_blank');
+               var win = window.open ('blog','_self');
                win.focus();
                return true;
           case 'projects':
