@@ -12,7 +12,7 @@ function Timeline() {
     },
     {
       "title": "SPEC - Technology News Blog",
-      "year" : "16-17"
+      "year" : "16_17"
     },
     {
       "title": "Cybercrime and Cybersecurity Seminars",
@@ -32,11 +32,11 @@ function Timeline() {
     },
     {
       "title": "Degree in Computer Science",
-      "year" : "16-19"
+      "year" : "16_19"
     },
     {
       "title": "Master Degree in Computer Science",
-      "year" : "19-"
+      "year" : "19_"
     }
   ]
 
@@ -44,11 +44,21 @@ function Timeline() {
     <div id="timeline" className="p-10">
       <div className="justify-center">
           {data.map((event, key) => {
+
+            var variationsBackground = event.year.includes('_') ? " p-0 py-2 " : " p-2 py-0 ";
+            var varitionsText = event.year.includes('_') ? " text-sm " : " text-3xl ";
+
             return (
-              <p>
-                <strong className="text-4xl text-green-300 text-center p-3 rounded-full">_ {event.year} /</strong>
-                <p className="">{event.title}</p>
-              </p>
+              <div>
+                <div className="justify-center text-left rounded-md shadow-lg bg-white p-3 mb-8">
+                  {/* RIGHT */}
+                  <p className="text-gray-600">{event.title}</p>
+                </div>
+                <div className="arrow-square"></div>
+                  <div className={"year-event transparent w-10 h-10 " + variationsBackground + " rounded-full overflow-hidden"}>
+                    <div className={"" + varitionsText + " text-prussian-blue-200 text-center rounded-full align-top"}>{event.year}</div>
+                  </div>
+              </div>
             )
           })}
       </div>

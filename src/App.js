@@ -26,19 +26,16 @@ function App() {
         </div>
         <Terminal />
         <button className="absolute bottom-0 mb-5 text-center w-64 left-0 right-0 ml-auto mr-auto h-10 text-sm items-center text-white">
-          <a href="#skills">_ view more</a>
+          <a href="#sections">_ view more</a>
         </button>
       </header>
-      <div className="section w-full justify-center h-full min-h-screen items-center p-5 pt-12">
-        <div className="flex justify-around">
-          <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Skills" setSection={setSection} section={section}/>
-          <SectionTitle btnId="btn-timeline" btnURL="#timeline" btnTitle="Timeline" setSection={setSection} section={section}/>
-          <SectionTitle btnId="btn-projects" btnURL="#projects" btnTitle="Projects" setSection={setSection} section={section}/>
-        </div>
-        { section === "skills" ? <Skills /> : section === "timeline" ? <Timeline /> : "" }
-
+      <div id="sections" className="section w-full justify-center h-full min-h-screen items-center p-5 pt-12">
+        <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Skills" setSection={setSection} section={section}/>
+        <Skills />
+        <SectionTitle btnId="btn-timeline" btnURL="#timeline" btnTitle="Timeline" setSection={setSection} section={section}/>
+        <Timeline />
+        <SectionTitle btnId="btn-projects" btnURL="#projects" btnTitle="Projects" setSection={setSection} section={section}/>
         {/* Projects */}
-
       </div>
       <Contacts />
     </div>
@@ -50,8 +47,7 @@ function changeSection(e, setSection){
 }
 
 const SectionTitle = (props) => {
-  let isActive = props.section === props.btnURL.replace('#', '') ? "active" : "";
-  return <button className={"section-title text-5xl text-gray-300 m-2 " + isActive} ><a id={props.btnId} onClick={(e) => {changeSection(e, props.setSection)}} href={props.btnURL}>{props.btnTitle}</a></button>
+  return <button className={"section-title text-6xl text-gray-800 m-2"} ><a id={props.btnId} onClick={(e) => {changeSection(e, props.setSection)}} href={props.btnURL}>{props.btnTitle}</a></button>
 }
 
 export default App;
