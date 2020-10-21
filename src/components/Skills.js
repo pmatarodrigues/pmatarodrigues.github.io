@@ -14,33 +14,11 @@ function Skills() {
   );
 }
 
-
-// export function TechSkills(){
-//   var iconColor = "#000";
-//   return(
-//     <div className="p-8 bg-white shadow-xl rounded-md">
-//       <h2 className="text-gray-600">Technical</h2>
-//       <div>
-//         <h1 className="flex"><Python title="Python" size={15} className="mr-2 text-gray-500" /> Python</h1>
-//         <h1 className="flex"><Java size={15} className="mr-2 text-gray-500"/> Java</h1>
-//         <h1 className="flex"><Javascript size={15} className="mr-2 text-gray-500"/> Java</h1>
-//         <h1 className="flex"><C size={15} className="mr-2 text-gray-500"/> C</h1>
-//         <h1 className="flex"><Mysql size={15} className="mr-2 text-gray-500"/> SQL</h1>
-//         <h1 className="flex"><NodeDotJs size={15} className="mr-2 text-gray-500"/> NodeJS</h1>
-//         <h1 className="flex"><Git size={15} className="mr-2 text-gray-500"/> Git</h1>
-//         <h1 className="flex"><ReactJs size={15} className="mr-2 text-gray-500"/> ReactJS</h1>
-//         <h1 className="flex"><Adobephotoshop size={15} className="mr-2 text-gray-500"/> Photoshop</h1>
-//         <h1 className="flex"><Adobeillustrator size={15} className="mr-2 text-gray-500"/> Illustrator</h1>
-//       </div>
-//     </div>
-//   );
-// }
-
 export function TechSkills(){
   var iconColor = "text-gray-500";
   var iconSize = 40;
   return(
-    <div className="p-2 sm:p-8 bg-white shadow-xl rounded-md">
+    <div className="p-2 sm:p-8 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
       <h2 className="text-gray-600 skill-title p-2">Technical</h2>
       <div className="flex justify-center p-2 flex-wrap flex-grow-0">
         <SkillElement Element={Python} title="Python" />
@@ -68,7 +46,7 @@ const SkillElement = (props) => {
 
 export function LangSkills(){
   return(
-    <div className="p-8 mt-10 bg-white shadow-xl rounded-md">
+    <div className="p-8 mt-10 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
       <h2 className="text-gray-600 skill-title p-2">Language</h2>
       <div className="p-2 flex text-center justify-center">
         <div>

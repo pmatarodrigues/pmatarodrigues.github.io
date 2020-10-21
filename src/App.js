@@ -5,6 +5,7 @@ import Terminal from './components/Terminal';
 import Skills from './components/Skills';
 import Timeline from './components/Timeline';
 import Contacts from './components/Contacts';
+import Projects from './components/Projects';
 
 function App() {
   const [section, setSection] = useState(window.location.toString().split('#')[1] ? window.location.toString().split('#')[1] : "skills");
@@ -35,7 +36,8 @@ function App() {
         <SectionTitle btnId="btn-timeline" btnURL="#timeline" btnTitle="Timeline" setSection={setSection} section={section}/>
         <Timeline />
         <SectionTitle btnId="btn-projects" btnURL="#projects" btnTitle="Projects" setSection={setSection} section={section}/>
-        {/* Projects */}
+        <h5 className="section-title text-2xl text-gray-600">Imported from <a href="https://github.com/pmatarodrigues">my Github</a></h5>
+        <Projects />
       </div>
       <Contacts />
     </div>

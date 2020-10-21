@@ -1,6 +1,4 @@
-import { render } from '@testing-library/react';
 import React from 'react';
-import { Adobeillustrator, Adobephotoshop, C, Git, Javascript, Mysql, NodeDotJs, Python, Java, ReactJs } from '@icons-pack/react-simple-icons';
 import '../tailwind.output.css';
 
 function Timeline() {
@@ -41,7 +39,7 @@ function Timeline() {
   ]
 
   return (
-    <div id="timeline" className="p-10">
+    <div id="timeline" className="p-10 max-w-2xl mx-auto">
       <div className="justify-center">
           {data.map((event, key) => {
 
