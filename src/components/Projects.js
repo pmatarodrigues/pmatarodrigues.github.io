@@ -28,9 +28,10 @@ function Projects() {
   // only projects I own
   // --> TODO: don't fetch forks
   function getGithubProjects(){
-    return axios.get('https://api.github.com/users/pmatarodrigues/repos?type=owner', {
+    console.log(`token ${process.env.REACT_APP_GITHUB_TOKEN}`)
+    return axios.get('https://api.github.com/user/pmatarodrigues/repos?type=owner', {
       'headers': {
-        'Authorization': `token 65318b425bb7fe64519a960dec220583fffdf617`
+        'Authorization': `token ${process.env.REACT_APP_GITHUB_TOKEN}`
       }
     })
     .then(res => res.data)
