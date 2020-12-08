@@ -36,7 +36,7 @@ function App() {
             <WhoAmI></WhoAmI>
           </div>
         )}
-        <button className="absolute border-white border-2 bottom-0 mb-5 text-center w-64 left-0 right-0 ml-auto mr-auto h-10 text-sm items-center text-white">
+        <button className="absolute bottom-0 mb-5 text-center w-64 left-0 right-0 ml-auto mr-auto h-10 text-sm items-center text-white">
           <a href="#sections">_ view more</a>
         </button>
       </header>
