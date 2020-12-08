@@ -11,7 +11,7 @@ import WhoAmI from './components/WhoAmI';
 function App() {
   const [section, setSection] = useState(window.location.toString().split('#')[1] ? window.location.toString().split('#')[1] : "skills");
   const [showWhoAmI, setShowWhoAmI] = useState(false)
-  const [showSections, setShowSections] = useState(false)
+  const [showSections, setShowSections] = useState(true)
 
 
   return (
@@ -36,8 +36,8 @@ function App() {
             <WhoAmI></WhoAmI>
           </div>
         )}
-        <button className="absolute border-white border-2 bottom-0 mb-5 text-center w-64 left-0 right-0 ml-auto mr-auto h-10 text-sm items-center text-white" onClick={() => setShowSections(!showSections)}>
-          <a href="#sections">_ view {showSections ? "less" : "more"}</a>
+        <button className="absolute border-white border-2 bottom-0 mb-5 text-center w-64 left-0 right-0 ml-auto mr-auto h-10 text-sm items-center text-white">
+          <a href="#sections">_ view more</a>
         </button>
       </header>
       { showSections ? (
