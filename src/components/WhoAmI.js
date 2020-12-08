@@ -5,10 +5,10 @@ import '../tailwind.output.css';
 function WhoAmI() {
 
   return (
-    <div className="w-full flex justify-center h-64 items-center mt-56 lg:mt-64">
-      <div className="bg-prussian-blue-600 rounded-lg text-left p-48 lg:h-64 lg:w-1/3 ">
-        <h1 className="text-white text-xl">I'm Pedro!</h1>
-        <h4 className="text-white text-sm">I'm a Computer Science student, also working as a software developer.
+    <div className="w-full flex justify-center h-56 items-center mt-56 lg:mt-5 sm:h-24">
+      <div className="bg-prussian-blue-600 rounded-lg text-left p-5 lg:h-0 lg:w-full sm:px-12">
+        <h1 className="text-white text-xl lg:text-4xl">I'm Pedro!</h1>
+        <h4 className="text-white text-sm sm:text-xs lg:text-base">I'm a Computer Science student, also working as a software developer.
         <br/>
         <br/>
         I like to build new and fun stuff all the time.
@@ -22,7 +22,7 @@ function WhoAmI() {
         <br/>
         Oh, and by the way... This is me
         <br/>
-        <img src="image.jpeg" className="w-56 h-auto" />
+        <img src="image.jpeg" className="w-32 h-auto sm:w-64" />
         <br/>
         <br/>
         If you'd like to talk to me (for suggestions, partnerships or just have some discussion) hit me up. My contacts are at the bottom of this page. Have a nice day ;)
