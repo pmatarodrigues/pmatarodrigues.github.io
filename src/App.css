@@ -76,7 +76,7 @@
 
 .arrow-square{
   border:solid 10px transparent;
-  border-right-color:#fff;
+  border-right-color:rgba(0, 31, 53, 1);
   position: absolute;
   margin:-70px 0 0 -20px;
 }

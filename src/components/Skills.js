@@ -3,12 +3,11 @@ import React from 'react';
 import { Adobeillustrator, Adobephotoshop, C, Git, Javascript, Mysql, NodeDotJs, Python, Java, ReactJs } from '@icons-pack/react-simple-icons';
 import '../tailwind.output.css';
 
-function Skills() {
+const Skills = (props) => {
   return (
     <div id="skills" className="p-10 lg:px-64">
       <div className=" justify-center">
-        <TechSkills />
-        <LangSkills />
+        { props.type === "tech" ? <TechSkills /> : <LangSkills />}
       </div>
     </div>
   );
@@ -19,7 +18,6 @@ export function TechSkills(){
   var iconSize = 40;
   return(
     <div className="p-2 sm:p-8 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
-      <h2 className="text-gray-600 skill-title p-2">Technical</h2>
       <div className="flex justify-center p-2 flex-wrap flex-grow-0">
         <SkillElement Element={Python} title="Python" />
         <SkillElement Element={Java} title="Java" />
@@ -46,8 +44,7 @@ const SkillElement = (props) => {
 
 export function LangSkills(){
   return(
-    <div className="p-8 mt-10 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
-      <h2 className="text-gray-600 skill-title p-2">Language</h2>
+    <div className="p-8 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
       <div className="p-2 flex text-center justify-center">
         <div>
           <h4 className="mx-5 text-xl sm:text-2xl">Portuguese</h4>

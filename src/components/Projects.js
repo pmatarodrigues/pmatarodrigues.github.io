@@ -28,8 +28,7 @@ function Projects() {
   // only projects I own
   // --> TODO: don't fetch forks
   function getGithubProjects(){
-    console.log(`token ${process.env.REACT_APP_GITHUB_TOKEN}`)
-    return axios.get('https://api.github.com/user/pmatarodrigues/repos?type=owner', {
+    return axios.get('https://api.github.com/users/pmatarodrigues/repos?type=owner', {
       'headers': {
         'Authorization': `token ${process.env.REACT_APP_GITHUB_TOKEN}`
       }
@@ -39,9 +38,6 @@ function Projects() {
   }
 
   const SkillElement = (props) => {
-    var iconColor = "text-gray-500";
-    var iconSize = 40;
-
     var Element;
 
     switch(props.Element){
@@ -79,7 +75,7 @@ function Projects() {
 
   return (
     <div id="timeline" className="p-10 max-w-2xl mx-auto justify-center sm:max-w-6xl">
-      <div className="flex overflow-scroll overflow-y-hidden">
+      <div className="flex flex-col overflow-scroll overflow-y-hidden sm:flex-row">
           { githubProjects &&
           githubProjects.filter((project, key) => {
             {/* Filter is used to skip forked projects */}
@@ -88,12 +84,11 @@ function Projects() {
           })
           // .sort(({date: previousDate, date: currentDate}) => previousDate - currentDate
           .map((project, key) => {
-            console.log(project.updated_at)
             return (
-              <a className="sm:w-64" id={key} href={project.html_url}>
-                <div className="p-8 mx-6 sm:px-20 bg-white h-full w-full shadow-xl rounded-md max-w-2xl text-left">
+              <a className="my-2 sm:my-0 sm:w-64" id={key} href={project.html_url}>
+                <div className="p-8 mx-0 sm:mx-6 sm:px-20 bg-white h-full w-full shadow-xl rounded-md max-w-2xl text-left">
                   <SkillElement Element={project.language} />
-                  <div className="text-center text-sm py-8 font-black capitalize">
+                  <div className="text-left text-sm py-3 font-black capitalize">
                     {project.name}
                   </div>
                   <div className="text-left text-xs font-thin">
