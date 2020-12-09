@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import '../tailwind.output.css';
 
 function WhoAmI() {
@@ -21,7 +21,7 @@ function WhoAmI() {
         <br/>
         Oh, and by the way... This is me
         <br/>
-        <img src="image.jpeg" className="w-32 h-auto sm:w-64" />
+        <img src="image.jpeg" alt="pmatarodrigues.jpg" className="w-32 h-auto sm:w-64" />
         <br/>
         <h4 className="text-xs">If you'd like to talk to me (for suggestions, partnerships or just have some discussion) hit me up. My contacts are at the bottom of this page. Have a nice day ;)</h4>
         </h4>

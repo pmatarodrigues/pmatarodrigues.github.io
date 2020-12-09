@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import { Adobeillustrator, Adobephotoshop, C, Git, Javascript, Mysql, NodeDotJs, Python, Java, ReactJs } from '@icons-pack/react-simple-icons';
 import '../tailwind.output.css';
@@ -14,8 +13,6 @@ const Skills = (props) => {
 }
 
 export function TechSkills(){
-  var iconColor = "text-gray-500";
-  var iconSize = 40;
   return(
     <div className="p-2 sm:p-8 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
       <div className="flex justify-center p-2 flex-wrap flex-grow-0">

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../tailwind.output.css';
-import { Link, Mail } from "heroicons-react";
+import { Mail } from "heroicons-react";
 import { Linkedin, Github } from '@icons-pack/react-simple-icons';
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../tailwind.output.css';
-import { Adobeillustrator, Adobephotoshop, C, Git, Javascript, Mysql, NodeDotJs, Python, Java, ReactJs, Shell, Csharp, Css3, Csswizardry } from '@icons-pack/react-simple-icons';
+import { C, Javascript, Python, Java, Csharp, Csswizardry } from '@icons-pack/react-simple-icons';
 import axios from 'axios';
 import { Terminal } from 'heroicons-react';
 

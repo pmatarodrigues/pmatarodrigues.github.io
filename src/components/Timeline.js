@@ -43,10 +43,6 @@ function Timeline() {
       <div className="justify-center max-w-2xl mx-auto">
         <button className={"section-title text-4xl sm:text-6xl text-gray-100 m-2"} ><a id="btn-achievements" href="#achievements">Achievements</a></button>
           {data.map((event, key) => {
-
-            var variationsBackground = event.year.includes('_') ? " p-0 py-2 " : " p-2 py-0 ";
-            var varitionsText = event.year.includes('_') ? " text-xs " : " text-sm";
-
             return (
               <div>
                 <div className="justify-center text-left rounded-md shadow-lg bg-prussian-blue-700 p-3 mb-8">
@@ -54,10 +50,6 @@ function Timeline() {
                   <p className="text-green-500" >{event.year}</p>
                   <p className="text-gray-200">{event.title}</p>
                 </div>
-                {/* <div className="arrow-square"></div> */}
-                {/* <div className={"year-event transparent w-10 h-10 " + variationsBackground + " rounded-full overflow-hidden"}>
-                  <div className={"" + varitionsText + " text-prussian-blue-200 text-center rounded-full align-top"}>{event.year}</div>
-                </div> */}
               </div>
             )
           })}
