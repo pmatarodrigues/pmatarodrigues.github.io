@@ -22,7 +22,7 @@ function App() {
               {showWhoAmI ? "home" : "whoami"}
           </button>
           <button className="underline hover:no-underline">
-            <a href="/blog">
+            <a href="https://blog.pmatarodrigues.com">
               blog >
             </a>
           </button>
