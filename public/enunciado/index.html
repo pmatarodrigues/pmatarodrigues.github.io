@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload='renderMathInElement(document.body,
+          {delimiters:[ {left: "$$", right: "$$" , display: true},
+                        {left: "$" , right: "$" , display: false},
+                        {left: "\\(" , right: "\\)" , display: false},
+                        {left: "\\[" , right: "\\]" , display: true}
+                        ]
+          });'>
+          </script>
+</head>
+
+<body>
+  <div class="linha">
+    <img class="logo" src="img/logos/republica-portuguesa.png">
+    <img class="logo" src="img/logos/iave.png">
+  </div>
+  <p class="negrito">Exame Final Nacional de Matemática A</p>
+  <p class="negrito">Prova 635 | 1.ª Fase | Ensino Secundário | 2020</p>
+  <p>12.º Ano de Escolaridade</p>
+  <p style="font-size: 12px;">Decreto-Lei n.º 139/2012, de 5 de julho | Decreto-Lei n.º 55/2018, de 6 de julho</p>
+  <div style="display: flex; justify-content: space-between;">
+    <p>Duração da Prova: 150 minutos. | Tolerância: 30 minutos.</p>
+    <p>8 Páginas</p>
+  </div>
+  <hr>
+
+  <p class="fundo-cinzento" style="padding: 20px; margin: 150px 0;">
+    A prova inclui 4 itens, devidamente identificados no enunciado, cujas respostas contribuem
+    obrigatoriamente para a classificação final (itens <b>5.1.</b>, <b>5.2.</b>, <b>7.1.</b> e <b>7.2.</b>). Dos
+    restantes 14 itens da prova,
+    apenas contribuem para a classificação final os 8 itens cujas respostas obtenham melhor pontuação.
+  </p>
+
+  <hr class="linha-horizontal" style="margin-top: 100px;">
+  </hr>
+  <p>
+  <p>Utilize apenas caneta ou esferográfica de tinta azul ou preta.</p>
+  <p>Não é permitido o uso de corretor. Risque aquilo que pretende que não seja classificado.</p>
+  <p>É permitido o uso de régua, compasso, esquadro, transferidor e calculadora gráfica.</p>
+  <p>Apresente apenas uma resposta para cada item.</p>
+  <p>As cotações dos itens encontram-se no final do enunciado da prova.</p>
+  </p>
+  <hr class="linha-horizontal">
+  </hr>
+
+  <hr class="linha-horizontal" style="margin-top: 80px;">
+  </hr>
+  <p>
+  <p>A prova inclui um formulário.</p>
+  <p>Nas respostas aos itens de escolha múltipla, selecione a opção correta. Escreva, na folha de respostas, o
+    número do item e a letra que identifica a opção escolhida.</p>
+  <p>Nas respostas aos restantes itens, apresente todos os cálculos que tiver de efetuar e todas as justificações
+    necessárias. Quando, para um resultado, não é pedida a aproximação, apresente sempre o valor exato.</p>
+  </p>
+  <hr class="linha-horizontal">
+  </hr>
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+
+  <h1 class="titulo-seccao">Formulário</h1>
+  <hr class="linha-titulo">
+  </hr>
+
+  <div class="formulario">
+    <div class="col-esq">
+      <h4 class="titulo-seccao-formulario">Geometria</h4>
+      <p style="font-weight: bold;">Comprimento de um arco de circunferência:</p>
+      $\alpha r$ ($\alpha$ - amplitude em radianos do ângulo ao centro; $r$ - raio)
+      <p style="font-weight: bold;">Área de um polígono regular: $Semiperímetro$ x $Apótema$</p>
+
+      <p style="font-weight: bold;">Área de um sector circular:</p>
+      $ \frac{\alpha r^2}{2} $ ($\alpha$ - amplitude, em radianos, do ângulo ao centro; $r$ - raio )
+
+      <p><b>Área lateral de um cone:</b> $\pi r g$ ($r$ - raio da base; $g$ - geratriz)</p>
+
+      <p><b>Área de uma superfície esférica:</b> $4 \pi r^2$ ($r$ - raio) </p>
+
+      <p><b>Volume de uma pirâmide:</b>$ \frac{1}{3}$ x $Área\ da\ Base$ x $Altura$</p>
+
+      <p><b>Volume de um cone:</b>$ \frac{1}{3}$ x $Área\ da\ Base$ x $Altura$</p>
+
+      <p><b>Volume de uma esfera:</b>$ \frac{4}{3} \pi r^3$ ($r$ - raio)</p>
+
+      <h4 class="titulo-seccao-formulario">Progressões</h4>
+      <p>Soma dos $n$ primeiros termos de uma progressão ($μ_n$)</p>
+
+      <p><b>Progressão aritmética: </b> $\frac{μ_1 + μ_n}{2}$ x $n$ </p>
+
+      <p><b>Progressão geométrica: </b> $μ_1$ x $ \frac{1 - r^n}{1 - r} $ </p>
+
+      <h4 class="titulo-seccao-formulario">Trigonometria</h4>
+      <p>$ sen (a + b) = sen\ a\ cos\ b + sen\ b\ cos\ a $</p>
+
+      <p>$ sen (a + b) = cos\ a\ cos\ b + sen\ a\ sen\ b $</p>
+
+      <h4 class="titulo-seccao-formulario">Complexos</h4>
+
+      <p> $( \rho e^{i \theta})^n$ = $ ( \rho^n e^{i n \theta}) $ </p>
+
+      <p> $ \sqrt[n]{\rho e^{i \theta}} $ = $ \sqrt[n]{\rho e^{i \frac{\theta + 2 k \pi}{n} }} $ ($k \in$ {0,..., $n$ -
+        1} e $n \in \N$) </p>
+
+    </div>
+    <div class="col-dir">
+      <h4 class="titulo-seccao-formulario">Regras de derivação</h4>
+
+      <p>$(u + v)'$ = $u' + v'$</p>
+
+      <p>$(u v)' = u' v + u v'$</p>
+
+      <p>$ (\frac{u}{v})' = \frac{u' v - u v'}{v^2} $</p>
+
+      <p>$(u^n)' = n u^{n - 1} u' (n \in \R)$</p>
+
+      <p>$ (sen\ u)' = u' cos u $</p>
+
+      <p>$ (cos\ u)' = - u' sen u $</p>
+
+      <p>$ (tg\ u)' = \frac{u'}{cos^2 u} $</p>
+
+      <p>$ (e^u)' = u' e^u $</p>
+
+      <p>$ (a^u)' = u' a^u ln\ a (a \in \R^+$ \{1} $)$</p>
+
+      <p>$ (ln \u)' = \frac{u'}{u} $</p>
+
+      <p>$ (log_a u)' = \frac{u'}{u\ ln\ a} (a \in \R^+ $ \{1} $)$</p>
+
+
+
+      <h4 class="titulo-seccao-formulario">Limites notáveis</h4>
+
+      <p>$ lim( 1 + \frac{1}{n} )^n = e (n \in \N) $</p>
+
+      <p>$ \displaystyle{\lim_{x \to 0}} \frac{sen\ x}{x} = 1 $</p>
+
+      <p>$ \displaystyle{\lim_{x \to 0}} \frac{e^x - 1}{x} = 1 $</p>
+
+      <p>$ \displaystyle{\lim_{x \to +\infty}} \frac{ln\ x}{x} = 0 $</p>
+
+      <p>$ \displaystyle{\lim_{x \to +\infty}} \frac{e^x}{x^p} = +\infty (p \in \R) $</p>
+
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------------------------------------- -->
+
+  <hr style="margin-top: 100px;">
+
+  <ol>
+    <li class="alinea-principal">Considere a sucessão $(u_n)$ de termo geral $u_n = \frac{8n - 4}{n + 1}$
+      <ol>
+        <li>Estude a sucessão $(u_n)$ quanto à monotonia.</li>
+        <li>Seja $f$ a função, de domínio $]-\infty, 8[$, definida por $f(x) = log_2(8-x)$
+          <p>A que é igual $lim\ f(u_n)$?</p>
+          <!-- opções -->
+          <div class="linha">
+            <p><b>(A)</b> $-\infty$ </p>
+            <p><b>(B)</b> 0 </p>
+            <p><b>(C)</b> 1 </p>
+            <p><b>(D)</b> $+\infty$ </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+
+    <hr>
+
+    <li class="alinea-principal">Quatro pessoas vão escolher, cada uma e em segredo, um dos seguintes números: $1, 2, 3,
+      4$ e $5$
+      <p>Qual é a probabilidade de exatamente duas delas escolherem o número $5$ ?</p>
+      <!-- opções -->
+      <div class="linha">
+        <p><b>(A)</b> 0,1530 </p>
+        <p><b>(B)</b> 0,1532 </p>
+        <p><b>(C)</b> 0,1534 </p>
+        <p><b>(D)</b> 0,1536 </p>
+      </div>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 3 -->
+    <li class="alinea-principal">
+      Um saco contém bolas azuis e bolas brancas, indistinguíveis ao tato. Cada bola tem uma única cor e só existem
+      bolas azuis e bolas brancas no saco.
+      <ol>
+        <li>Retiram-se ao acaso, sucessivamente e sem reposição, duas bolas do saco.
+          <p>Sejam A e B os acontecimentos:</p>
+          <p>A : «A primeira bola retirada é azul»</p>
+          <p>B : «A segunda bola retirada é branca»</p>
+          <p>Sabe-se que $ P(A \cap B) = \frac{1}{3}P(A) $</p>
+          <p>Justifique que inicialmente existia um número ímpar de bolas azuis no saco.</p>
+          <p><b>Sugestão:</b> comece por designar por $a$ o número de bolas azuis e por $b$ o número de bolas brancas
+            que
+            existiam inicialmente no saco.</p>
+        </li>
+
+        <li>
+          Considere que se alterou a constituição inicial do saco e que, neste, estão agora oito bolas azuis e
+          sete bolas brancas.
+          <p>Pretende-se colocar todas estas bolas em dez caixas numeradas de 1 a 10, de tal forma que:</p>
+          <ul>
+            <li>cada caixa com número par tenha, pelo menos, uma bola azul;</li>
+            <li>cada caixa com número ímpar tenha, pelo menos, uma bola branca;</li>
+            <li>cada caixa tenha, no máximo, duas bolas.</li>
+          </ul>
+          <p>Nestas condições, de quantas maneiras diferentes podem ficar colocadas as bolas nas dez caixas?</p>
+          <!-- opções -->
+          <div class="linha">
+            <p><b>(A)</b> 1176 </p>
+            <p><b>(B)</b> 2520 </p>
+            <p><b>(C)</b> 28 016 </p>
+            <p><b>(D)</b> 30 550 </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 4 -->
+    <li class="alinea-principal">
+      Seja C o conjunto dos números complexos.
+      <p>Resolva este item sem recorrer à calculadora.</p>
+      <p>Considere, em C, a equação $z^2 = \bar{z}$</p>
+      <p>Sabe-se que, no plano complexo, os afixos dos números complexos não nulos que são soluções desta equação são os
+        vértices de um polígono regular.</p>
+      <p>Determine o perímetro desse polígono.</p>
+      <ol>
+        <li>Considere, em C, a condição $ Re(z)$ x $Im(z) = 1 $</li>
+        <p>Em qual das opções seguintes pode estar representado, no plano complexo, o conjunto de pontos definido por
+          esta condição?</p>
+        <!-- opções -->
+        <div class="coluna">
+          <p><b>(A)</b></p>
+          <p><img src="img/figuras/4.2a.png" /> </p>
+          <p><b>(B)</b></p>
+          <p></p><img src="img/figuras/4.2b.png" /></p>
+        </div>
+        <div class="coluna">
+          <p><b>(C)</b></p>
+          <p><img src="img/figuras/4.2c.png" /> </p>
+          <p><b>(D)</b></p>
+          <p></p><img src="img/figuras/4.2d.png" /></p>
+        </div>
+      </ol>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 5 -->
+    <li class="alinea-principal" style="border: 4px solid black; padding: 20px;"> Na Figura 1, está representado, num
+      referencial o.n. $Oxyz$, um
+      cilindro reto.
+      <div style="margin: auto;">
+        <img style="margin: 0 30%;" src="img/figuras/fig1.png" />
+        <p style="text-align:center;">Figura 1</p>
+      </div>
+      <p>Sabe-se que:</p>
+      <ul>
+        <li>o ponto $A$ pertence ao eixo $Oy$ e é o centro de uma das bases do cilindro, e o ponto $B$ pertence ao eixo
+          $Ox$ e é o centro da outra base;</li>
+        <li>o ponto $C$ pertence à circunferência de centro $B$ que delimita uma das bases do cilindro;</li>
+        <li>o plano $ABC$ é definido pela equação $3x + 4y + 4z - 12 = 0$</li>
+      </ul>
+      <p>Resolva os itens <b>5.1.</b> e <b>5.2.</b> sem recorrer à calculadora.</p>
+      <ol>
+        <li>Determine $BC$, sabendo que o volume do cilindro é igual a $10 \pi$</li>
+        <li>Seja $P$ o ponto de coordenadas $(3, 5, 6)$
+          <p>Determine as coordenadas do ponto do plano $ABC$ que se encontra mais próximo do ponto $P$</p>
+        </li>
+      </ol>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 6 -->
+    <li class="alinea-principal">Na Figura 2, estão representados, num referencial o.n. $xOy$, os pontos $S$, $T$ e $U$
+      e a reta $r$ de equação
+      $y = 2x + 4$
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <p>Sabe-se que:</p>
+          <ul>
+            <li>os pontos $S$ e $T$ são, respetivamente, os pontos de intersecção da reta $r$ com os eixos $Oy$ e $Ox$
+            </li>
+            <li>o ponto $U$ pertence ao eixo $Ox$ e tem abcissa inferior à do ponto $T$</li>
+          </ul>
+          <p>Qual dos valores seguintes é o valor, aproximado às centésimas, da amplitude, em radianos, do ângulo $STU$?
+          </p>
+        </div>
+        <div style="margin: auto;">
+          <img src="img/figuras/fig2.png" />
+          <p style="text-align:center;">Figura 2</p>
+        </div>
+      </div>
+      <!-- opções -->
+      <div class="linha">
+        <p><b>(A)</b> 4,25 </p>
+        <p><b>(B)</b> 2,68 </p>
+        <p><b>(C)</b> 2,03 </p>
+        <p><b>(D)</b> 1,82 </p>
+      </div>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 7 -->
+    <li class="alinea-principal" style="border: 4px solid black; padding: 20px;">O mecanismo de manivela-biela é
+      composto por uma manivela de
+      comprimento fixo, que efetua um movimento de rotação (sempre no mesmo sentido), e por uma biela, também de
+      comprimento fixo, que transforma esse movimento de rotação no movimento alternado de translação de um pistão.
+      <p>Na Figura 3, está representado esse mecanismo.</p>
+      <div style="margin: auto;">
+        <img src="img/figuras/fig3.png" />
+        <p style="text-align:center;">Figura 3</p>
+      </div>
+      <p>Na Figura 4, está representado um esquema do mecanismo descrito.</p>
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <p>Relativamente a esta figura, sabe-se que:</p>
+          <ul>
+            <li>o ponto $P$ representa o pistão;</li>
+            <li>o segmento de reta $[OM]$ representa a manivela, que tem 1 cm de comprimento;</li>
+            <li>o segmento de reta $[MP]$ representa a biela;</li>
+            <li>os pontos $A$ e $B$ são os pontos em que a distância do pistão ao centro de rotação da manivela, $O$, é
+              mínima e máxima, respetivamente;</li>
+            <li>os pontos $O$, $A$, $P$ e $B$ são colineares.</li>
+          </ul>
+        </div>
+        <div style="margin: auto;">
+          <img src="img/figuras/fig4.png" />
+          <p style="text-align:center;">Figura 4</p>
+        </div>
+      </div>
+      <p>Sabe-se que o movimento de rotação da manivela se inicia quando o pistão se encontra na posição B e que a
+        manivela descreve voltas completas a uma frequência angular constante.</p>
+      <p>Admita que a função que dá, em centímetros, a distância do pistão ao ponto O, em função do tempo, t, em
+        segundos, contado a partir do instante em que é iniciado o movimento, é dada por</p>
+      $$ d(t) = cos\ t + \sqrt{9 - sen^2t}, t \geqslant 0 $$
+      <p>(o argumento das funções seno e cosseno está expresso em radianos)</p>
+      <ol>
+        <li>Qual é, em centímetros, o comprimento da biela neste mecanismo?</li>
+        <!-- opções -->
+        <div class="linha">
+          <p><b>(A)</b> 2 </p>
+          <p><b>(B)</b> 3 </p>
+          <p><b>(C)</b> 4 </p>
+          <p><b>(D)</b> 5 </p>
+        </div>
+        <li> Durante os primeiros cinco segundos, após o início do movimento, registou-se, num certo instante $t_0$, a
+          distância do pistão ao ponto $O$
+          <p>Sabe-se que, dois segundos após esse instante, a distância do pistão ao ponto $O$ diminuiu 25%.</p>
+          <p>Determine, recorrendo às capacidades gráficas da calculadora, a distância, em centímetros, arredondada às
+            décimas, do pistão ao ponto $O$ no instante $t_0$, sabendo-se que este valor existe e é único.</p>
+          <p>Não justifique a validade do resultado obtido na calculadora.</p>
+          <p>Na sua resposta:</p>
+          <p>- apresente uma equação que lhe permita resolver o problema;</p>
+          <p>- reproduza, num referencial, o(s) gráfico(s) da(s) função(ões) visualizado(s) na calculadora que lhe
+            permite(m) resolver a equação e apresente as coordenadas do(s) ponto(s) relevante(s) arredondadas às
+            centésimas;</p>
+          <p>- apresente o valor pedido em centímetros, arredondado às décimas.</p>
+          <p>Se, nos cálculos intermédios, proceder a arredondamentos, conserve, no mínimo, duas casas decimais.</p>
+        </li>
+      </ol>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 8 -->
+    <li class="alinea-principal">Na Figura 5, estão representados, num referencial o.n. $xOy$, a circunferência
+      trigonométrica, a reta $r$ de
+      equação $x = 1$, e um ponto $A$, de ordenada $a\ (a > 1)$, pertencente à reta $r$
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <p>Está também representada a semirreta $OA$, que intersecta a circunferência trigonométrica no ponto $B$</p>
+          <p>Qual das expressões seguintes dá, em função de $a$, a abcissa do ponto $B$?</p>
+          <!-- opções -->
+          <div class="linha">
+            <p><b>(A)</b> $ \frac{1}{\sqrt{a^2 + 1}} $ </p>
+            <p><b>(B)</b> $ \sqrt{a^2 + 1} $ </p>
+            <p><b>(C)</b> $ \frac{1}{\sqrt{a^2 - 1}} $ </p>
+            <p><b>(D)</b> $ \sqrt{a^2 - 1} $ </p>
+          </div>
+        </div>
+        <div style="margin: auto;">
+          <img src="img/figuras/fig5.png" />
+          <p style="text-align:center;">Figura 5</p>
+        </div>
+      </div>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 9 -->
+    <li class="alinea-principal">Seja $f$ a função definida em $]-\infty, 2[$ por $f(x) = x + ln(e^x + 1)$
+      <p>Resolva os itens <b>9.1.</b> e <b>9.2.</b> sem recorrer à calculadora.</p>
+      <ol>
+        <li>O gráfico de $f$ tem uma assíntota oblíqua.
+          <p>Determine uma equação dessa assíntota.</p>
+        </li>
+        <li>A equação $f(x) = 2x + 1$ tem uma única solução.
+          <p>Determine essa solução e apresente-a na forma $ - ln\ k$, com $k > 0$</p>
+        </li>
+        <li> Seja $h$ a função definida em $]-\infty, 2[$ por $h(x) = $f(x) - x$
+          <p>Qual das expressões seguintes pode ser a expressão analítica da função $h^{-1}$, função inversa de $h$ ?
+          </p>
+          <!-- opções -->
+          <div class="linha">
+            <p><b>(A)</b> $ e^x - 1 $ </p>
+            <p><b>(B)</b> $ 1 - e^x $ </p>
+            <p><b>(C)</b> $ ln(e^x - 1) $ </p>
+            <p><b>(D)</b> $ ln(1 - e^x) $ </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+
+    <hr>
+
+    <!-- pergunta 10 -->
+    <li class="alinea-principal"> Seja $g$ a função, de domínio $\R$, definida por
+      $$ g(x) = \begin{cases} 1 + \frac{sen\ x}{1 - e^x} & \text{se } x < 0,\\ 0 & \text{se } x=0,\\ x^2 ln\ x &
+        \text{se } x> 0 \end{cases} $$ <p>Resolva os itens <b>10.1.</b> e <b>10.2.</b> sem recorrer à
+          calculadora.</p>
+        <ol>
+          <li> Averigue se a função $g$ é contínua em $x = 0$</li>
+          <li>Estude a função $g$ quanto à monotonia em $]0, +\infty[$ e determine, caso existam, os extremos relativos.
+          </li>
+          <p>Na sua resposta, apresente o(s) intervalo(s) de monotonia.</p>
+        </ol>
+    </li>
+
+
+  </ol>
+
+  <div>
+  </div>
+
+  <h1 style="text-align: center; margin: 200px 0;">Fim</h1>
+
+  <h2 style="text-align: center;">Cotações</h2>
+
+  <table>
+    <tr>
+      <th class="fundo-cinzento esquerda" style="max-width: 500px;">As pontuações obtidas nas respostas a estes 4 itens
+        da prova
+        contribuem
+        obrigatoriamente para a classificação
+        final.</th>
+      <th class="fundo-cinzento" colspan="4">5.1.</th>
+      <th class="fundo-cinzento" colspan="4">5.2.</th>
+      <th class="fundo-cinzento" colspan="3">7.1.</th>
+      <th class="fundo-cinzento" colspan="3">7.2.</th>
+      <th class="fundo-cinzento">Subtotal</th>
+    </tr>
+    <tr>
+      <td class="esquerda" style="max-width: 100px;">Cotação (em pontos) final.</td>
+      <td colspan="4">16</td>
+      <td colspan="4">20</td>
+      <td colspan="3">16</td>
+      <td colspan="3">20</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td class="fundo-cinzento esquerda" style="max-width: 100px;">Destes 14 itens, contribuem para a classificação
+        final da
+        prova os 8 itens cujas
+        respostas obtenham melhor pontuação.</td>
+      <td class="fundo-cinzento">1.1.</td>
+      <td class="fundo-cinzento">1.2.</td>
+      <td class="fundo-cinzento">2.</td>
+      <td class="fundo-cinzento">3.1.</td>
+      <td class="fundo-cinzento">3.2.</td>
+      <td class="fundo-cinzento">4.1.</td>
+      <td class="fundo-cinzento">4.2.</td>
+      <td class="fundo-cinzento">6.</td>
+      <td class="fundo-cinzento">8.</td>
+      <td class="fundo-cinzento">9.1.</td>
+      <td class="fundo-cinzento">9.2.</td>
+      <td class="fundo-cinzento">9.3.</td>
+      <td class="fundo-cinzento">10.1.</td>
+      <td class="fundo-cinzento">10.2.</td>
+      <td class="fundo-cinzento">Subtotal</td>
+    </tr>
+    <tr>
+      <td class="esquerda">Cotação (em pontos)</td>
+      <td colspan="14">8 x 16 pontos</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td class="esquerda" colspan="15">TOTAL</td>
+      <td>200</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
