@@ -15,17 +15,17 @@ const Skills = (props) => {
 export function TechSkills(){
   return(
     <div className="p-2 sm:p-8 bg-white shadow-xl rounded-md max-w-2xl mx-auto">
-      <div className="flex justify-center p-2 flex-wrap flex-grow-0">
-        <SkillElement Element={Python} title="Python" />
-        <SkillElement Element={Java} title="Java" />
-        <SkillElement Element={Javascript} title="Javascript" />
-        <SkillElement Element={C} title="C" />
-        <SkillElement Element={Mysql} title="Mysql" />
-        <SkillElement Element={NodeDotJs} title="Node.Js" />
-        <SkillElement Element={Git} title="Git" />
-        <SkillElement Element={ReactJs} title="ReactJs" />
-        <SkillElement Element={Adobephotoshop} title="Photoshop" />
-        <SkillElement Element={Adobeillustrator} title="Illustrator" />
+      <div className="flex flex-col justify-center p-2 flex-wrap flex-grow-0 text-center">
+        <SkillElement Element={Python} title="Python" value={50} />
+        <SkillElement Element={Java} title="Java" value={50} />
+        <SkillElement Element={Javascript} title="Javascript" value={70} />
+        <SkillElement Element={C} title="C" value={30} />
+        <SkillElement Element={Mysql} title="Mysql" value={70} />
+        <SkillElement Element={NodeDotJs} title="Node.Js" value={60} />
+        <SkillElement Element={Git} title="Git" value={60} />
+        <SkillElement Element={ReactJs} title="ReactJs" value={70} />
+        <SkillElement Element={Adobephotoshop} title="Photoshop" value={60} />
+        <SkillElement Element={Adobeillustrator} title="Illustrator" value={60} />
       </div>
     </div>
   );
@@ -35,7 +35,13 @@ const SkillElement = (props) => {
   var iconColor = "text-gray-500";
   var iconSize = 40;
   return(
-    <props.Element size={iconSize} className={"p-1 " + iconColor}/>
+    <div className="flex justify-between">
+      <div className="flex justify-start">
+        <props.Element size={iconSize} className={"p-1 " + iconColor} />
+        <p className="text-gray-600 text-xl text-left pl-10">{props.title}</p>
+      </div>
+      <p className={`text-gray-400 opacity-${props.value <= 50 ? 50 : props.value <= 60 ? 75 : 100}`}>{props.value}</p>
+    </div>
   )
 }
 

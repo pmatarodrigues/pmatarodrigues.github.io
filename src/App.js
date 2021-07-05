@@ -5,7 +5,7 @@ import Terminal from './components/Terminal';
 import Skills from './components/Skills';
 import Timeline from './components/Timeline';
 import Contacts from './components/Contacts';
-import Projects from './components/Projects';
+import Projects from './components/ProjectsList';
 import WhoAmI from './components/WhoAmI';
 
 function App() {
@@ -42,15 +42,14 @@ function App() {
       </header>
       { showSections ? (
         <div id="sections" className="section w-full justify-center h-full min-h-screen items-center pt-12">
-          <SectionTitle btnId="btn-projects" btnURL="#projects" btnTitle="Projects" setSection={setSection} section={section}/>
-          <h5 className="section-title text-2xl text-gray-600">Imported using <a href="https://github.com/pmatarodrigues"> Github API</a></h5>
-          <Projects />
           <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Technical Skills" setSection={setSection} section={section}/>
           <Skills type="tech" />
           <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Language Skills" setSection={setSection} section={section}/>
           <Skills type="lang" />
           {/* <SectionTitle btnId="btn-achievements" btnURL="#achievements" btnTitle="Achievements" setSection={setSection} section={section}/> */}
           <Timeline />
+          <SectionTitle btnId="btn-projects" btnURL="#projects" btnTitle="Projects" setSection={setSection} section={section} />
+          <Projects />
         </div>
       ) : (
         <div>
