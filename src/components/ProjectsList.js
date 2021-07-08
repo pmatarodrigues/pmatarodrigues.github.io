@@ -52,9 +52,9 @@ function Projects() {
             'language': 'Javascript',
             "year": "2018",
             'type': 'School Project',
-            'url': '',
+            'url': 'https://rick-morty.pmatarodrigues.com',
             'github': 'https://github.com/pmatarodrigues/rick-morty-arcade-game',
-            'thumbnail': ''
+            'thumbnail': 'rick-morty-arcade.mp4'
         },
         {
             "title": "Youras Music",
@@ -104,7 +104,7 @@ function Projects() {
             'type': 'School Project',
             'url': '',
             'github': 'https://github.com/pmatarodrigues/positioning-system-image-recognition',
-            'thumbnail': 'app-positioning-system.gif'
+            'thumbnail': 'app-positioning-system.mp4'
         },
         {
             "title": "Notify Horario-UM",
@@ -134,7 +134,7 @@ function Projects() {
             'type': 'Side Project',
             'url': '',
             'github': 'https://github.com/pmatarodrigues/shareat',
-            'thumbnail': 'shareat.gif'
+            'thumbnail': 'shareat.mp4'
         },
         {
             "title": "FoodEat",
@@ -144,7 +144,7 @@ function Projects() {
             'type': 'Side Project',
             'url': '',
             'github': 'https://github.com/pmatarodrigues/foodeat',
-            'thumbnail': 'foodeat.gif'
+            'thumbnail': 'foodeat.mp4'
         },
         {
             "title": "Spickles",
@@ -154,7 +154,7 @@ function Projects() {
             'type': 'School Project',
             'url': '',
             'github': 'https://github.com/Yusoi/Spickles',
-            'thumbnail': 'spickles.gif'
+            'thumbnail': 'spickles.mp4'
         },
         {
             "title": "AirFinance",
@@ -168,7 +168,7 @@ function Projects() {
         },
         {
             "title": "SuperSimpleTODO",
-            'description': 'Super simple to use to-do list written in Go ',
+            'description': 'Command Line simple to use to-do list written in Go ',
             'language': 'Go',
             "year": "2021",
             'type': 'Tool',
@@ -235,7 +235,11 @@ function Projects() {
                     return (
                         <div>
                             <div className="text-left rounded-md shadow-lg bg-white p-3 mb-8">
-                                <img src={`/projects/${event.thumbnail}`} width="100%" className={`pb-3 ${event.thumbnail.length > 1 ? '' : 'hidden'}`} />
+                                {event.thumbnail.endsWith('.mp4') ? (
+                                    <video autoplay="autoplay" loop='loop' src={`/projects/${event.thumbnail}`} width="100%" className={`pb-3 ${event.thumbnail.length > 1 ? '' : 'hidden'}`} />
+                                ) : (
+                                        <img src={`/projects/${event.thumbnail}`} width="100%" className={`pb-3 ${event.thumbnail.length > 1 ? '' : 'hidden'}`} />
+                                )}
                                 {/* RIGHT */}
                                 <div className="flex justify-between">
                                     <div>
