@@ -1,0 +1,43 @@
+/* You can customize theme styles here */
+:root{
+--font-family-heading:'Poppins',sans-serif;
+--font-family-paragraph:'Helvetica',sans-serif;
+--main-color: #48bb78;
+}
+
+html body {
+    font-family: var(--font-family-paragraph);
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-family-heading);
+}
+
+.header .navbar-brand span:first-child {
+    text-transform:uppercase;
+    letter-spacing: 0;
+    font-size: 16px;
+}
+
+.rad-showcase .container h1{
+    font-size: 30px;
+}
+
+@media (min-width:768px) {
+    .header .navbar-brand span:first-child{
+        font-size:16px
+    }
+}
+
+@media (min-width:992px){
+    .rad-showcase .container h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .header .navbar-brand span:first-child{
+        font-size:20px
+    }
+}
+
+.lead{opacity: 0.5;}

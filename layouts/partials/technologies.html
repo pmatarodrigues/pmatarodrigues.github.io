@@ -1,0 +1,27 @@
+{{ if .Site.Data.homepage.technologies.enable }}
+
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row row--padded rad-animation-group rad-fade-down">
+            <div class="col-12">
+              <div class="clients">
+                {{ range .Site.Data.homepage.skills_and_projects_and_tools.clients }}
+                <div class="clients__item">
+                  <a href="https://radity.com">
+                    <img
+                      class="lozad img-responsive"
+                      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                      data-src="{{ .logo.x | absURL }}"
+                      data-srcset="{{ .logo.x | absURL }} 1x, {{ .logo._2x | absURL }} 2x"
+                      alt="{{ .alt }}"
+                    />
+                  </a>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+{{ end }}

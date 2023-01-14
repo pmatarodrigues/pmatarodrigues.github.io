@@ -1,0 +1,208 @@
+# showcase
+showcase:
+  enable: true
+  title: "pedro@matarodrigues"
+  subtitle: "~ $ Hey there!"
+  description: "Software Engineer"
+  socialLinks:
+    - icon: "linkedin-line"
+      URL: "https://www.linkedin.com/in/pmatarodrigues"
+    - icon: "github-line"
+      URL: "https://github.com/pmatarodrigues"
+    - icon: "mail-fill"
+      URL: "mailto:me@pmatarodrigues.com"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "Universidade do Minho"
+      year: "2019-2021"
+      degree: "Master Degree in Computer Science"
+
+    - university: "Instituto Politécnico de Viana do Castelo (IPVC)"
+      year: "2016-2019"
+      degree: "Degree in Computer Science"
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: ""
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/pmatarodrigues"
+
+  items:
+    - title: "Software Engineer"
+      company: "Talkdesk"
+      duration: "Feb 2022 - "
+
+    - title: "Full-Stack Developer (Part-Time)"
+      company: "WebAtual"
+      duration: "Jun 2020 - Oct 2021"
+
+    - title: "Full-Stack Developer (Internship)"
+      company: "Picus"
+      duration: "Jun 2018 - Aug 2018"
+
+# Client & Work
+skills_and_projects_and_tools:
+  title: "Projects"
+  enable: true
+
+  clients:
+    - logo:
+        x: "img/clients/asgardia.png"
+        _2x: "img/clients/asgardia@2x.png"
+      alt: "Asgardia"
+
+    - logo:
+        x: "img/clients/earth-2.png"
+        _2x: "img/clients/earth-2@2x.png"
+      alt: "Earth 2.0"
+
+    - logo:
+        x: "img/clients/goldline.png"
+        _2x: "img/clients/goldline@2x.png"
+      alt: "Goldline"
+
+    - logo:
+        x: "img/clients/kanba.png"
+        _2x: "img/clients/kanba@2x.png"
+      alt: "Kanba"
+
+    - logo:
+        x: "img/clients/zoo-tv.png"
+        _2x: "img/clients/zoo-tv@2x.png"
+      alt: "Zoo"
+
+    - logo:
+        x: "img/clients/ztos.png"
+        _2x: "img/clients/ztos@2x.png"
+      alt: "Ztos"
+
+  works:
+    - title: "FoodEat"
+      description: "Mobile application to help choose a restaurant for the next meal. \'You don't know where to eat? We'll choose for you.\'"
+      button:
+        icon: "github-line"
+        btnText: "Github"
+        URL: "https://github.com/pmatarodrigues/foodeat"
+      image:
+        x: "img/projects/foodeat.mp4"
+        _2x: "img/works/robo-advisor@2x.jpg"
+      is_even: false
+
+    - title: "Rick and Morty - Arcade Game"
+      description: "Arcade Super Mario-like game based on Rick and Morty TV Show."
+      button:
+        icon: "github-line"
+        btnText: "Github"
+        URL: "https://github.com/pmatarodrigues/rick-morty-arcade-game"
+      button2:
+        icon: "url-line"
+        btnText: "Demo"
+        URL: "https://rick-morty.pmatarodrigues.com"
+      image:
+        x: "img/projects/rick-morty-arcade.mp4"
+        _2x: "img/works/robo-advisor@2x.jpg"
+      is_even: true   
+
+    - title: "Spickles"
+      description: "Mobile app to choose movies in a group."
+      button:
+        icon: "github-line"
+        btnText: "Github"
+        URL: "https://github.com/Yusoi/Spickles"
+      image:
+        x: "img/projects/spickles.mp4"
+        _2x: "img/projects/spickles.mp4"
+      is_even: false
+
+    - title: "SharEat"
+      description: "Create and save grocery lists without account."
+      button:
+        icon: "github-line"
+        btnText: "Github"
+        URL: "https://github.com/pmatarodrigues/shareat"
+      image:
+        x: "img/projects/shareat.mp4"
+        _2x: "img/works/robo-advisor@2x.jpg"
+      is_even: true
+
+    - title: "Positioning System - Image Recognition"
+      description: "Android app to increase the precision of maps using the phone's camera."
+      button:
+        icon: "github-line"
+        btnText: "Github"
+        URL: "https://github.com/pmatarodrigues/positioning-system-image-recognition"
+      image:
+        x: "img/projects/app-positioning-system.mp4"
+        _2x: "img/works/robo-advisor@2x.jpg"
+      is_even: false   
+
+  tools:
+    enable: true
+    title: "Tools"
+    description: ""
+    button:
+      icon: "icon-linkedin-fill"
+      btnText: "Linkedin"
+      URL: "https://www.linkedin.com/in/pmatarodrigues"
+    button2:
+      icon: "icon-profile-fill"
+      btnText: "Download My Resume"
+      URL: "#"
+
+    items:
+      - title: "Snippet Generator"
+        description: "Generate snippets based on input code (useful for VSCode, Sublime Text, etc...)"
+        language: "ReactJS / NextJS"
+        button:
+          btnText: "Github"
+          url: "https://github.com/pmatarodrigues/rick-morty-arcade-game"
+          icon: "github-line"
+        button2:
+          btnText: "Demo"
+          url: "https://snippet-generator.pmatarodrigues.com/"
+          icon: "github-line"
+
+      - title: "SuperSimpleTODO"
+        description: "Command Line simple to use to-do list written in Go."
+        language: "Go"
+        button:
+          btnText: "Github"
+          url: "https://github.com/pmatarodrigues/supersimpletodo"
+          icon: "github-line"
+
+      - title: "Space Glued Words"
+        description: "Small project built to add spaces and split words that were glued on a pdf file. (Natural Language Processing)"
+        language: "Python"
+        button:
+          btnText: "Github"
+          url: "https://github.com/pmatarodrigues/spaces-glued-pdf-words"
+          icon: "github-line"
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    action: "#"
+    full_name: "Name"
+    email: "Email"
+    message: "Type Your Message Here"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
+
+# newsletter
+newsletter:
+  enable: true
+  title: "Newsletter subscription"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "We'll never share your email with anyone else."

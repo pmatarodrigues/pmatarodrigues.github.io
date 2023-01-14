@@ -1,0 +1,99 @@
+{{ if .Site.Data.homepage.skills_and_projects_and_tools.enable }}
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      {{ .Site.Data.homepage.skills_and_projects_and_tools.title }}
+    </h2>
+    {{ range $index, $element := .Site.Data.homepage.skills_and_projects_and_tools.works }}
+    <div
+      class="row row--padded rad-animation-group rad-fade-down {{ if .is_even }}flex-column-reverse flex-md-row{{ end }}"
+    >
+      {{ if .is_even }}
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>{{ .title }}</h3>
+        <p class="lead">
+          {{ .description }}
+        </p>
+        <a href="{{ .button.URL | absURL }}" class="btn btn-primary">
+          {{ if .button.icon }}
+            <i class="icon-{{ .button.icon }}"></i>
+          {{ end }}
+          {{ .button.btnText }}
+          <i class="icon-arrow-right"></i
+        ></a>
+        {{ if .button2 }}
+          <a href="{{ .button2.URL | absURL }}" class="btn btn-primary">
+            {{ if .button2.icon }}
+              <i class="icon-{{ .button2.icon }}"></i>
+            {{ end }}
+            {{ .button2.btnText }}
+            <i class="icon-arrow-right"></i
+          ></a>
+        {{ end }}
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        {{ if strings.HasSuffix .image.x ".mp4" }}
+          <video 
+            class='lozad img-responsive {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
+            autoplay="autoplay" 
+            loop='loop' 
+            src="{{ .image.x }}" 
+            width="100%" />
+        {{ else }}
+          <img
+            class='lozad img-responsive {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
+            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+            data-src="{{ .image.x | absURL }}"
+            data-srcset="{{ .image.x | absURL }} 1x, {{ .image._2x | absURL }} 2x"
+            alt="{{ .title }}"
+          />
+        {{ end }}
+      </div>
+      {{ else }}
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        {{ if strings.HasSuffix .image.x ".mp4" }}
+          <video 
+          class='lozad img-responsive {{ cond (eq ( mod $index 4) 1)  "img-clip-right-backward" "img-clip-right-forward" }}'
+          autoplay="autoplay" 
+          loop='loop' 
+          src="{{ .image.x }}" 
+          width="100%" />
+        {{ else }}
+          <img
+            class='lozad img-responsive {{ cond (eq ( mod $index 4) 1)  "img-clip-right-backward" "img-clip-right-forward" }}'
+            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+            data-src="{{ .image.x | absURL }}"
+            data-srcset="{{ .image.x | absURL }} 1x, {{ .image._2x | absURL }} 2x"
+            alt="{{ .title }}"
+          />
+        {{ end }}
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>{{ .title }}</h3>
+        <p class="lead">
+          {{ .description }}
+        </p>
+        <a href="{{ .button.URL | absURL }}" class="btn btn-primary">
+          {{ if .button.icon }}
+            <i class="icon-{{ .button.icon }}"></i>
+          {{ end }}
+          {{ .button.btnText }}
+          <i class="icon-arrow-right"></i
+        ></a>
+        {{ if .button2 }}
+          <a href="{{ .button2.URL | absURL }}" class="btn btn-primary">
+            {{ if .button2.icon }}
+              <i class="icon-{{ .button2.icon }}"></i>
+            {{ end }}
+            {{ .button2.btnText }}
+            <i class="icon-arrow-right"></i
+          ></a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+</section>
+{{ end }}

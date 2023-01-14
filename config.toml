@@ -1,0 +1,48 @@
+baseURL = "https://pmatarodrigues.com/"
+languageCode = "en-us"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+  [[menu.header]]
+  name = "Blog"
+  URL = "https://blog.pmatarodrigues.com"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Blog"
+  URL = "https://blog.pmatarodrigues.com"
+  weight = 2
+
+
+[params]
+
+  sections = ["showcase", "education", "experience", "technologies", "projects"]
+
+  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  [params.logo]
+    text1 = "Pedro Mata Rodrigues"
+
+  [params.footer]
+      copyright = "© Pedro Mata Rodrigues. All rights reserved."
