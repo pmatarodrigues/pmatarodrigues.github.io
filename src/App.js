@@ -42,8 +42,8 @@ function App() {
       </header>
       { showSections ? (
         <div id="sections" className="section w-full justify-center h-full min-h-screen items-center pt-12">
-          <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Technical Skills" setSection={setSection} section={section}/>
-          <Skills type="tech" />
+          {/* <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Technical Skills" setSection={setSection} section={section}/> */}
+          {/* <Skills type="tech" /> */}
           <SectionTitle btnId="btn-skills" btnURL="#skills" btnTitle="Language Skills" setSection={setSection} section={section}/>
           <Skills type="lang" />
           {/* <SectionTitle btnId="btn-achievements" btnURL="#achievements" btnTitle="Achievements" setSection={setSection} section={section}/> */}
